@@ -1,0 +1,20 @@
+# Direct dependencies only — let pip resolve the transitive ones.
+#
+# Deliberately unpinned. A `pip freeze` dump pins every transitive package to
+# the exact version that happened to be installed, which breaks the moment you
+# rebuild the venv on a different Python: matplotlib==3.9.4 has no wheel for
+# 3.14, so pip tries to compile it from source and fails. Listing only what the
+# project actually imports lets pip pick versions that work on the interpreter
+# you have.
+pandas
+textstat
+pytest
+streamlit    # dashboard
+altair       # dashboard charts. Ships WITH streamlit, so nothing new is
+             # installed — but the dashboard imports it directly now, and an
+             # undeclared transitive dep is one `pip` resolution away from
+             # vanishing. st.bar_chart avoids the dependency but cannot do
+             # layered reference bands or click-to-filter, which the
+             # readability chart needs.
+seaborn      # notebook exploration only; not needed by extract.py
+ipykernel    # notebook kernel; not needed by extract.py

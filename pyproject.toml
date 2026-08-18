@@ -1,0 +1,33 @@
+[project]
+name = "dochealth"
+version = "0.3.0"
+description = "Per-page documentation health metrics for docs-as-code repos"
+readme = "README.md"
+requires-python = ">=3.10"
+# Only what the installed tool imports. pytest/seaborn/ipykernel stay in
+# requirements.txt — they are how the project is developed, not what it needs
+# to run. Unpinned for the reason requirements.txt gives: a pinned transitive
+# dep breaks the next interpreter you rebuild on.
+dependencies = [
+    "pandas",
+    "textstat",
+]
+
+# streamlit is an extra, not a dependency: `dochealth extract` does not import
+# it, so someone who only wants a CSV should not have to install a web
+# framework. Installed with `pip install -e ".[dashboard]"`.
+[project.optional-dependencies]
+dashboard = ["streamlit", "altair"]
+
+# The bridge between "a Python function" and "a word you can type".
+# pip reads this and writes an executable shim named `dochealth` into
+# .venv/bin/, whose body is: import main from dochealth.cli, call it, exit.
+[project.scripts]
+dochealth = "dochealth.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dochealth"]

@@ -1,0 +1,20 @@
+# Cloned test repos — 2.4GB between them. Never commit these; the README says
+# which repos to clone and where.
+website/
+docusaurus/
+
+# Environment — rebuild from requirements.txt
+.venv/
+
+# Regenerable
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Ad-hoc extraction output. The two committed metrics-*.csv files are the
+# demo corpora and are deliberately tracked; anything else is regenerable with
+# `dochealth extract`.
+metrics.csv
+
+# Local working notes, not part of the tool.
+PORTFOLIO-NOTES.md
