@@ -533,10 +533,17 @@ with tab_overview:
     labels = (alt.Chart(band_rects).mark_text(dy=-6, fontSize=10, opacity=0.75)
               .encode(x=alt.X("mid:Q"), y=alt.value(0), text="band:N")
               .transform_calculate(mid="(datum.lo + datum.hi) / 2"))
+    # Headroom above the tallest bar. Altair's default domain stops exactly at the
+    # max, so the modal bin runs into the band labels sitting along the top edge
+    # and reads as clipped. 15% is set from the data rather than by growing the
+    # chart, so the band shading still spans the full plot height. max(1, ...)
+    # keeps the domain valid on an empty or all-zero corpus.
+    y_headroom = max(1, int(hist["pages"].max() * 1.15) + 1)
     bars = (alt.Chart(hist).mark_bar(stroke="white", strokeWidth=1)
             .encode(x=alt.X("bin_start:Q", bin=alt.Bin(binned=True, step=FLESCH_BIN_STEP)),
                     x2="bin_end:Q",
-                    y=alt.Y("pages:Q", title="Pages"),
+                    y=alt.Y("pages:Q", title="Pages",
+                            scale=alt.Scale(domain=[0, y_headroom], nice=False)),
                     tooltip=["bin_start:Q", "bin_end:Q", "pages:Q"])
             .add_params(alt.selection_point(name="picked", fields=["bin_start"], empty=False)))
 
