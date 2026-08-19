@@ -1,177 +1,353 @@
 path,title,extracted_at,non_page_by_convention,word_count,heading_count,heading_max_depth,code_fence_count,code_block_density,internal_link_count,todo_flag,days_since_update,days_since_update_raw,age_days,median_line_age_days,last_update_commit_msg,commit_count,author_count,flesch_reading_ease,words_per_heading,staleness_to_age_ratio
-content/en/docs/concepts/_index.md,Concepts,2026-08-17T15:02:42.436262+00:00,False,33,0,0,0,0.0,0,False,2246,2246,3614,2992,Add descriptions to Concept sections,50,26,,,0.62
-content/en/docs/concepts/architecture/_index.md,"""Cluster Architecture""",2026-08-17T15:02:42.436262+00:00,False,1144,22,3,0,0.0,15,False,143,143,3025,723,fix architecture page orphan link,10,7,32.55,52.0,0.05
-content/en/docs/concepts/architecture/cgroups.md,About cgroup v2,2026-08-17T15:02:42.436262+00:00,False,841,8,3,1,1.19,7,False,52,52,1489,1469,cgroupv2 node.js update,11,8,48.17,105.12,0.03
-content/en/docs/concepts/architecture/cloud-controller.md,Cloud Controller Manager,2026-08-17T15:02:42.436262+00:00,False,704,11,3,1,1.42,3,False,78,78,3216,2343,Add theme_lock front matter to concepts overview pages,50,40,31.97,64.0,0.02
-content/en/docs/concepts/architecture/control-plane-node-communication.md,Communication between Nodes and the Control Plane,2026-08-17T15:02:42.436262+00:00,False,846,7,3,0,0.0,14,False,715,715,3820,1577,"Fix broken links from ""overview/components/#..."" to ""architecture/#..."" (#47724)",58,39,47.48,120.86,0.19
-content/en/docs/concepts/architecture/controller.md,Controllers,2026-08-17T15:02:42.436262+00:00,False,1034,7,3,0,0.0,6,False,715,715,2510,2510,"Fix broken links from ""overview/components/#..."" to ""architecture/#..."" (#47724)",22,15,59.04,147.71,0.28
-content/en/docs/concepts/architecture/garbage-collection.md,Garbage Collection,2026-08-17T15:02:42.436262+00:00,False,1278,11,4,0,0.0,19,False,300,300,1865,1865,4210: mark as stable,26,22,38.21,116.18,0.16
-content/en/docs/concepts/architecture/leases.md,Leases,2026-08-17T15:02:42.436262+00:00,False,614,5,3,4,6.51,4,False,138,138,1356,1286,Add docs for KEP-5366 ControllerManagerReleaseLeaderElectionLockOnExit feature gate,12,9,48.31,122.8,0.1
-content/en/docs/concepts/architecture/mixed-version-proxy.md,Mixed Version Proxy,2026-08-17T15:02:42.436262+00:00,False,813,6,3,2,2.46,5,False,172,172,1120,1097,Doc update about MVP graduation to beta in 1.36,8,4,33.82,135.5,0.15
-content/en/docs/concepts/architecture/nodes.md,Nodes,2026-08-17T15:02:42.436262+00:00,False,1850,11,3,3,1.62,27,False,92,92,3826,2472,docs: use glossary tooltip shortcode for containers on Nodes page,183,122,59.2,168.18,0.02
-content/en/docs/concepts/architecture/self-healing.md,Kubernetes Self-Healing,2026-08-17T15:02:42.436262+00:00,False,280,3,2,0,0.0,10,False,269,269,511,511,Fix formatting,7,4,30.99,93.33,0.53
-content/en/docs/concepts/cluster-administration/_index.md,Cluster Administration,2026-08-17T15:02:42.436262+00:00,False,450,5,3,0,0.0,21,False,559,559,3025,1549,Add a new page for mutating webhook good practices.,20,11,37.0,90.0,0.18
-content/en/docs/concepts/cluster-administration/addons.md,Installing Addons,2026-08-17T15:02:42.436262+00:00,False,818,6,2,0,0.0,5,False,125,125,3623,1208,fix(links): update kubernetes/community links from master to main,86,66,34.13,136.33,0.03
-content/en/docs/concepts/cluster-administration/admission-webhooks-good-practices.md,Admission Webhook Good Practices,2026-08-17T15:02:42.436262+00:00,False,3830,37,3,2,0.52,23,False,331,331,559,559,fix: typos,6,2,37.65,103.51,0.59
-content/en/docs/concepts/cluster-administration/certificates.md,Certificates,2026-08-17T15:02:42.436262+00:00,False,11,0,0,0,0.0,1,False,2038,2038,3222,3222,Migrate https://kubernetes.io/docs/concepts/cluster-administration/certificates/ to tasks section,22,21,,,0.63
-content/en/docs/concepts/cluster-administration/compatibility-version.md,Compatibility Version For Kubernetes Control Plane Components,2026-08-17T15:02:42.436262+00:00,False,161,1,2,0,0.0,0,False,649,649,744,744,remove min-compat-version,2,2,23.97,161.0,0.87
-content/en/docs/concepts/cluster-administration/coordinated-leader-election.md,Coordinated Leader Election,2026-08-17T15:02:42.436262+00:00,False,588,3,2,0,0.0,11,False,160,160,761,163,Lease API,14,3,37.01,196.0,0.21
-content/en/docs/concepts/cluster-administration/dra.md,Good practices for Dynamic Resource Allocation as a Cluster Admin,2026-08-17T15:02:42.436262+00:00,False,1268,11,3,0,0.0,3,False,125,125,384,384,fix(links): update kubernetes/community links from master to main,10,3,33.88,115.27,0.33
-content/en/docs/concepts/cluster-administration/flow-control.md,API Priority and Fairness,2026-08-17T15:02:42.436262+00:00,False,5819,26,4,1,0.17,4,False,125,125,2335,1669,fix(links): update kubernetes/community links from master to main,68,32,39.22,223.81,0.05
-content/en/docs/concepts/cluster-administration/kube-state-metrics.md,Metrics for Kubernetes Object States,2026-08-17T15:02:42.436262+00:00,False,279,2,2,2,7.17,0,False,888,888,888,888,Add section about kube-state-metrics,1,1,42.13,139.5,1.0
-content/en/docs/concepts/cluster-administration/logging.md,Logging Architecture,2026-08-17T15:02:42.436262+00:00,False,2221,13,4,11,4.95,13,False,668,668,3512,1548,doc: document the usage of the PodLogsQuerySplitStreams feature,68,48,51.32,170.85,0.19
-content/en/docs/concepts/cluster-administration/networking.md,Cluster Networking,2026-08-17T15:02:42.436262+00:00,False,542,4,2,0,0.0,4,False,295,295,3840,1050,Update content/en/docs/concepts/cluster-administration/networking.md,134,87,31.2,135.5,0.08
-content/en/docs/concepts/cluster-administration/node-autoscaling.md,Node Autoscaling,2026-08-17T15:02:42.436262+00:00,False,1831,17,4,0,0.0,8,False,63,63,861,861,Fix typos in manual documentation pages,3,3,29.6,107.71,0.07
-content/en/docs/concepts/cluster-administration/node-shutdown.md,Node Shutdowns,2026-08-17T15:02:42.436262+00:00,False,1910,7,3,2,1.05,16,False,156,156,845,845,Add unattended-upgrades conflict warning to node shutdown docs,8,7,52.42,272.86,0.18
-content/en/docs/concepts/cluster-administration/observability.md,Observability,2026-08-17T15:02:42.436262+00:00,False,1051,11,4,0,0.0,20,False,328,328,328,328,docs: add observability overview page,1,1,31.62,95.55,1.0
-content/en/docs/concepts/cluster-administration/proxies.md,Proxies in Kubernetes,2026-08-17T15:02:42.436262+00:00,False,315,2,2,0,0.0,3,False,1392,1392,3380,3380,KubeCon Docs Sprint: Update page weights for content/en/docs/concepts/cluster-administration.,13,12,44.41,157.5,0.41
-content/en/docs/concepts/cluster-administration/swap-memory-management.md,Swap memory management,2026-08-17T15:02:42.436262+00:00,False,2706,23,3,9,3.33,10,False,70,70,424,424,Fix incorrect on disk in swap LimitedSwap section,7,5,45.83,117.65,0.17
-content/en/docs/concepts/cluster-administration/system-logs.md,System Logs,2026-08-17T15:02:42.436262+00:00,False,1454,9,3,11,7.57,5,False,125,125,2275,1607,fix(links): update kubernetes/community links from master to main,19,12,52.59,161.56,0.05
-content/en/docs/concepts/cluster-administration/system-metrics.md,Metrics For Kubernetes System Components,2026-08-17T15:02:42.436262+00:00,False,1708,11,4,10,5.85,5,False,131,131,2382,1409,polish and added example per feedback,40,24,50.4,155.27,0.05
-content/en/docs/concepts/cluster-administration/system-traces.md,Traces For Kubernetes System Components,2026-08-17T15:02:42.436262+00:00,False,645,8,4,3,4.65,1,False,411,411,1853,1847,KEP-2831: kubelet tracing GA in 1.34,19,12,34.01,80.62,0.22
-content/en/docs/concepts/configuration/_index.md,"""Configuration""",2026-08-17T15:02:42.436262+00:00,False,0,0,0,0,0.0,0,False,2246,1888,3025,3025,Add descriptions to Concept sections,3,3,,,0.74
-content/en/docs/concepts/configuration/configmap.md,ConfigMaps,2026-08-17T15:02:42.436262+00:00,False,1594,9,4,9,5.65,7,False,269,269,2325,2246,Fix formatting of kubectl logs command,47,31,57.07,177.11,0.12
-content/en/docs/concepts/configuration/manage-resources-containers.md,Resource Management for Pods and Containers,2026-08-17T15:02:42.436262+00:00,False,3936,32,5,11,2.79,37,False,54,54,3457,1838,Fix incorrect ValidatingAdmissionPolicy reference,146,104,50.47,123.0,0.02
-content/en/docs/concepts/configuration/organize-cluster-access-kubeconfig.md,Organizing Cluster Access Using kubeconfig Files,2026-08-17T15:02:42.436262+00:00,False,897,7,2,3,3.34,5,False,1587,1587,3281,3281,Docs fix for kubectl proxy configuration,16,15,55.45,128.14,0.48
-content/en/docs/concepts/configuration/secret.md,Secrets,2026-08-17T15:02:42.436262+00:00,False,4157,31,5,7,1.68,41,False,24,24,3826,1420,Replace code with code_sample shortcode,218,137,50.91,134.1,0.01
-content/en/docs/concepts/configuration/windows-resource-management.md,Resource Management for Windows nodes,2026-08-17T15:02:42.436262+00:00,False,494,3,2,0,0.0,1,False,1532,1532,1636,1636,Updating Windows intro and resource management pages (#34083),2,1,45.79,164.67,0.94
-content/en/docs/concepts/containers/_index.md,Containers,2026-08-17T15:02:42.436262+00:00,False,271,2,2,0,0.0,3,False,674,674,3025,2246,Update _index.md,14,8,43.61,135.5,0.22
-content/en/docs/concepts/containers/container-environment.md,Container Environment,2026-08-17T15:02:42.436262+00:00,False,228,4,3,1,4.39,5,False,259,259,3400,3400,Clarify Service-to-Pod wording and normalize DNS addon spelling,26,19,31.35,57.0,0.08
-content/en/docs/concepts/containers/container-lifecycle-hooks.md,Container Lifecycle Hooks,2026-08-17T15:02:42.436262+00:00,False,901,7,3,1,1.11,5,False,179,179,3826,3400,Fix some links in the En docs,69,45,52.14,128.71,0.05
-content/en/docs/concepts/containers/cri.md,Container Runtime Interface (CRI),2026-08-17T15:02:42.436262+00:00,False,345,4,2,0,0.0,1,False,186,186,1728,530,Add documentation for CRIListStreaming feature gate,9,7,51.48,86.25,0.11
-content/en/docs/concepts/containers/images.md,Images,2026-08-17T15:02:42.436262+00:00,False,3669,23,4,4,1.09,17,False,183,183,3840,1251,Fix misleading imagePullPolicy: Always description,136,90,49.03,159.52,0.05
-content/en/docs/concepts/containers/runtime-class.md,Runtime Class,2026-08-17T15:02:42.436262+00:00,False,731,11,4,4,5.47,8,False,95,95,2880,2629,update api-reference and ref shortcode callers for new URL structure,44,29,41.5,66.45,0.03
-content/en/docs/concepts/extend-kubernetes/_index.md,Extending Kubernetes,2026-08-17T15:02:42.436262+00:00,False,1939,23,4,0,0.0,42,False,125,125,3014,1509,fix(links): update kubernetes/community links from master to main,28,17,42.31,84.3,0.04
-content/en/docs/concepts/extend-kubernetes/api-extension/_index.md,Extending the Kubernetes API,2026-08-17T15:02:42.436262+00:00,False,142,0,0,0,0.0,2,False,143,143,3014,1060,remove duplicate links,10,5,47.55,,0.05
-content/en/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation.md,Kubernetes API Aggregation Layer,2026-08-17T15:02:42.436262+00:00,False,307,3,3,0,0.0,6,False,179,179,3338,2269,Fix some links in the En docs,21,14,40.3,102.33,0.05
-content/en/docs/concepts/extend-kubernetes/api-extension/custom-resources.md,Custom Resources,2026-08-17T15:02:42.436262+00:00,False,3000,20,3,2,0.67,26,False,296,296,3342,2391,Add SVM beta docs,81,56,49.24,150.0,0.09
-content/en/docs/concepts/extend-kubernetes/compute-storage-net/_index.md,"Compute, Storage, and Networking Extensions",2026-08-17T15:02:42.436262+00:00,False,243,0,0,0,0.0,5,False,125,125,3014,1509,fix(links): update kubernetes/community links from master to main,4,4,48.44,,0.04
-content/en/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins.md,Device Plugins,2026-08-17T15:02:42.436262+00:00,False,2307,14,3,9,3.9,14,False,118,118,3244,1914,Clarify hardcoded device plugins path in documentation,106,71,42.62,164.79,0.04
-content/en/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins.md,Network Plugins,2026-08-17T15:02:42.436262+00:00,False,479,6,3,3,6.26,6,False,747,747,3820,2918,Update content/en/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins.md,76,44,45.52,79.83,0.2
-content/en/docs/concepts/extend-kubernetes/operator.md,Operator pattern,2026-08-17T15:02:42.436262+00:00,False,812,7,2,1,1.23,5,False,397,397,2593,2593,docs(operators): update URI to KubeOps,36,26,39.57,116.0,0.15
-content/en/docs/concepts/overview/_index.md,"""Overview""",2026-08-17T15:02:42.436262+00:00,False,1412,4,2,0,0.0,6,False,78,78,3025,1362,Add theme_lock front matter to concepts overview pages,21,14,31.92,353.0,0.03
-content/en/docs/concepts/overview/components.md,Kubernetes Components,2026-08-17T15:02:42.436262+00:00,False,291,5,3,0,0.0,14,False,78,78,3826,723,Add theme_lock front matter to concepts overview pages,92,60,35.87,58.2,0.02
-content/en/docs/concepts/overview/kubectl.md,The kubectl command-line tool,2026-08-17T15:02:42.436262+00:00,False,594,7,2,0,0.0,19,False,168,168,169,169,cross-link from related pages and remove thirdparty shortcode,2,1,49.87,84.86,0.99
-content/en/docs/concepts/overview/kubernetes-api.md,The Kubernetes API,2026-08-17T15:02:42.436262+00:00,False,1629,12,3,2,1.23,12,False,586,586,3826,1593,Fix feature gate name conflicts (2/2),112,61,40.99,135.75,0.15
-content/en/docs/concepts/overview/working-with-objects/_index.md,Objects In Kubernetes,2026-08-17T15:02:42.436262+00:00,False,1067,6,3,2,1.87,17,False,265,265,3025,1681,Migrate K8s Configuration Good Practices to blog,18,7,46.43,177.83,0.09
-content/en/docs/concepts/overview/working-with-objects/annotations.md,Annotations,2026-08-17T15:02:42.436262+00:00,False,577,3,2,2,3.47,2,False,52,52,3614,3044,"docs: apply reviewer suggestions - KiB unit, bold all, add CBOR note",26,20,41.64,192.33,0.01
-content/en/docs/concepts/overview/working-with-objects/common-labels.md,Recommended Labels,2026-08-17T15:02:42.436262+00:00,False,570,5,3,7,12.28,0,False,844,844,2960,2960,Update common-labels.md,15,14,48.38,114.0,0.29
-content/en/docs/concepts/overview/working-with-objects/field-selectors.md,Field Selectors,2026-08-17T15:02:42.436262+00:00,False,343,6,3,6,17.49,4,False,117,117,2951,2951,Add service field selectors,20,15,54.54,57.17,0.04
-content/en/docs/concepts/overview/working-with-objects/finalizers.md,Finalizers,2026-08-17T15:02:42.436262+00:00,False,674,3,2,0,0.0,2,False,476,476,1865,1865,Clarify that custom finalizers names must be publicly qualified finalizer names,14,10,42.66,224.67,0.26
-content/en/docs/concepts/overview/working-with-objects/labels.md,Labels and Selectors,2026-08-17T15:02:42.436262+00:00,False,1582,14,4,23,14.54,19,False,155,155,3840,1295,docs: address review feedback on labels example,82,48,46.11,113.0,0.04
-content/en/docs/concepts/overview/working-with-objects/names.md,Object Names and IDs,2026-08-17T15:02:42.436262+00:00,False,638,7,3,1,1.57,6,False,202,202,3840,2370,docs: clarify object identity uniqueness and NodeRestriction label constraints,54,33,53.96,91.14,0.05
-content/en/docs/concepts/overview/working-with-objects/namespaces.md,Namespaces,2026-08-17T15:02:42.436262+00:00,False,670,10,3,5,7.46,12,False,241,241,3826,2613,Update namespace docs,80,55,53.85,67.0,0.06
-content/en/docs/concepts/overview/working-with-objects/object-management.md,Kubernetes Object Management,2026-08-17T15:02:42.436262+00:00,False,823,11,3,6,7.29,7,False,1681,1681,3498,3495,Reorganize Working with Kubernetes Objects section,33,20,24.99,74.82,0.48
-content/en/docs/concepts/overview/working-with-objects/owners-dependents.md,Owners and Dependents,2026-08-17T15:02:42.436262+00:00,False,614,3,2,0,0.0,8,False,1681,1681,1865,1865,Reorganize Working with Kubernetes Objects section,6,4,43.3,204.67,0.9
-content/en/docs/concepts/overview/working-with-objects/storage-version.md,Storage Versions,2026-08-17T15:02:42.436262+00:00,False,1037,4,2,1,0.96,4,False,134,134,296,296,"Fix typos in docs: limtations, storege, Althought",3,3,50.58,259.25,0.45
-content/en/docs/concepts/policy/_index.md,"""Policies""",2026-08-17T15:02:42.436262+00:00,False,412,6,3,0,0.0,9,False,966,966,3025,1177,fix typos,7,5,15.13,68.67,0.32
-content/en/docs/concepts/policy/limit-range.md,Limit Ranges,2026-08-17T15:02:42.436262+00:00,False,838,4,2,1,1.19,9,False,225,225,2658,1406,Update limit-range.md,37,27,44.17,209.5,0.08
-content/en/docs/concepts/policy/pid-limiting.md,Process ID Limits And Reservations,2026-08-17T15:02:42.436262+00:00,False,806,4,2,0,0.0,6,False,606,606,2159,2159,Update pid-limiting.md,7,5,55.09,201.5,0.28
-content/en/docs/concepts/policy/resource-quotas.md,Resource Quotas,2026-08-17T15:02:42.436262+00:00,False,3354,24,5,30,8.94,35,False,269,269,3840,479,Remove extra brackets from quota,126,76,50.21,139.75,0.07
-content/en/docs/concepts/scheduling-eviction/_index.md,"""Scheduling, Preemption and Eviction""",2026-08-17T15:02:42.436262+00:00,False,124,2,2,0,0.0,18,False,172,172,2322,1938,KEP-5710: Update scheduler docs for workload aware preemption,16,12,,62.0,0.07
-content/en/docs/concepts/scheduling-eviction/api-eviction.md,API-initiated Eviction,2026-08-17T15:02:42.436262+00:00,False,570,4,2,3,5.26,7,False,495,495,1938,1899,Update docs for deprecation of Endpoints API (#49831),6,4,51.99,142.5,0.26
-content/en/docs/concepts/scheduling-eviction/assign-pod-node.md,Assigning Pods to Nodes,2026-08-17T15:02:42.436262+00:00,False,3694,22,4,8,2.17,25,False,188,188,3840,1829,revert: restore original descriptions for Gt and Lt operators,188,115,52.79,167.91,0.05
-content/en/docs/concepts/scheduling-eviction/dynamic-resource-allocation.md,Dynamic Resource Allocation,2026-08-17T15:02:42.436262+00:00,False,8192,47,5,26,3.17,36,False,95,95,1364,183,update api-reference and ref shortcode callers for new URL structure,72,34,40.63,174.3,0.07
-content/en/docs/concepts/scheduling-eviction/gang-scheduling.md,Gang Scheduling,2026-08-17T15:02:42.436262+00:00,False,299,2,2,0,0.0,9,False,130,130,272,272,Address feedback,6,3,62.02,149.5,0.48
-content/en/docs/concepts/scheduling-eviction/kube-scheduler.md,Kubernetes Scheduler,2026-08-17T15:02:42.436262+00:00,False,602,4,3,0,0.0,13,False,912,912,2595,2595,Fix spelling mistake in kube scheduler,30,21,45.9,150.5,0.35
-content/en/docs/concepts/scheduling-eviction/node-declared-features.md,Node Declared Features,2026-08-17T15:02:42.436262+00:00,False,306,3,2,0,0.0,2,False,298,298,298,298,Docs update for Node Declared Features (KEP-5328) alpha,1,1,48.36,102.0,1.0
-content/en/docs/concepts/scheduling-eviction/node-pressure-eviction.md,Node-pressure Eviction,2026-08-17T15:02:42.436262+00:00,False,3552,30,4,2,0.56,18,False,26,26,1938,1707,revert PR 56329 which should have targeted the dev-1.37 branch,34,25,51.57,118.4,0.01
-content/en/docs/concepts/scheduling-eviction/pod-overhead.md,Pod Overhead,2026-08-17T15:02:42.436262+00:00,False,738,5,3,13,17.62,5,False,859,859,2534,2335,Explain RuntimeClass name in Pod Overhead concept (#45454),23,17,50.64,147.6,0.34
-content/en/docs/concepts/scheduling-eviction/pod-priority-preemption.md,Pod Priority and Preemption,2026-08-17T15:02:42.436262+00:00,False,2462,21,4,3,1.22,12,False,574,574,3244,2942,Drop stale reviewers,66,45,49.53,117.24,0.18
-content/en/docs/concepts/scheduling-eviction/pod-scheduling-readiness.md,Pod Scheduling Readiness,2026-08-17T15:02:42.436262+00:00,False,487,5,2,7,14.37,0,False,908,908,1383,1383,promote feature PodSchedulingReadiness to stable,13,7,55.46,97.4,0.66
-content/en/docs/concepts/scheduling-eviction/podgroup-scheduling.md,PodGroup Scheduling,2026-08-17T15:02:42.436262+00:00,False,1159,11,3,1,0.86,8,False,63,63,173,173,Fix typos in manual documentation pages,4,4,39.35,105.36,0.36
-content/en/docs/concepts/scheduling-eviction/resource-bin-packing.md,Resource Bin Packing,2026-08-17T15:02:42.436262+00:00,False,686,5,3,12,17.49,8,False,86,86,2536,2099,Address review: clarify scheduler does not move existing pods,27,20,48.21,137.2,0.03
-content/en/docs/concepts/scheduling-eviction/scheduler-perf-tuning.md,Scheduler Performance Tuning,2026-08-17T15:02:42.436262+00:00,False,1143,8,3,4,3.5,7,False,171,171,2880,2412,Opportunistic Batching feature docs update for 1.36,28,17,57.54,142.88,0.06
-content/en/docs/concepts/scheduling-eviction/scheduling-framework.md,Scheduling Framework,2026-08-17T15:02:42.436262+00:00,False,1581,21,4,3,1.9,4,False,409,409,2624,2335,KEP-4247: Graduate SchedulerQueueingHints feature to GA,39,24,57.6,75.29,0.16
-content/en/docs/concepts/scheduling-eviction/taint-and-toleration.md,Taints and Tolerations,2026-08-17T15:02:42.436262+00:00,False,2437,7,2,10,4.1,14,False,188,188,3286,2472,fix incorrect definition of Gt & Lt operators in taints % tolerations,86,58,54.91,348.14,0.06
-content/en/docs/concepts/scheduling-eviction/topology-aware-scheduling.md,Topology-Aware Workload Scheduling,2026-08-17T15:02:42.436262+00:00,False,276,3,3,1,3.62,4,False,45,45,139,139,docs: fix grammar in topology-aware scheduling concept page,2,2,41.43,92.0,0.32
-content/en/docs/concepts/scheduling-eviction/topology-spread-constraints.md,Pod Topology Spread Constraints,2026-08-17T15:02:42.436262+00:00,False,3371,17,4,7,2.08,14,False,294,294,2535,1560,Remove node label typo section per reviewer feedback,96,49,48.51,198.29,0.12
-content/en/docs/concepts/scheduling-eviction/workload-aware-preemption.md,Workload-Aware Preemption,2026-08-17T15:02:42.436262+00:00,False,379,2,2,0,0.0,9,False,172,172,172,172,KEP-5710: Update scheduler docs for workload aware preemption,1,1,43.3,189.5,1.0
-content/en/docs/concepts/security/_index.md,"""Security""",2026-08-17T15:02:42.436262+00:00,False,616,9,3,0,0.0,24,False,559,559,2635,1058,Add a new page for mutating webhook good practices.,10,7,19.36,68.44,0.21
-content/en/docs/concepts/security/api-server-bypass-risks.md,Kubernetes API Server Bypass Risks,2026-08-17T15:02:42.436262+00:00,False,1242,8,3,0,0.0,7,False,200,200,1466,1466,Strengthen and clarify nodes/proxy warnings,6,6,46.58,155.25,0.14
-content/en/docs/concepts/security/application-security-checklist.md,Application Security Checklist,2026-08-17T15:02:42.436262+00:00,False,791,11,3,0,0.0,8,False,649,649,827,650,Fix a clause about request/limit in app-security-checklist,3,2,34.44,71.91,0.78
-content/en/docs/concepts/security/cloud-native-security.md,"""Cloud Native Security and Kubernetes""",2026-08-17T15:02:42.436262+00:00,False,1310,13,3,0,0.0,23,False,268,268,2635,925,Remove hyphen for end users of the CNCF ecosystem.,16,8,30.28,100.77,0.1
-content/en/docs/concepts/security/controlling-access.md,Controlling Access to the Kubernetes API,2026-08-17T15:02:42.436262+00:00,False,956,6,2,2,2.09,21,False,1173,1173,3840,2297,Tweak line wrappings in /services-networking/ingress.md,69,46,37.11,159.33,0.31
-content/en/docs/concepts/security/hardening-guide/authentication-mechanisms.md,Hardening Guide - Authentication Mechanisms,2026-08-17T15:02:42.436262+00:00,False,1189,9,2,0,0.0,11,False,643,643,1103,1094,Add reference to authentication-mechanisms.md,7,3,24.07,132.11,0.58
-content/en/docs/concepts/security/hardening-guide/dynamic-resource-allocation.md,"""Hardening Guide - Dynamic Resource Allocation""",2026-08-17T15:02:42.436262+00:00,False,276,8,3,3,10.87,4,False,131,131,131,131,update with tim suggestions,1,1,30.65,34.5,1.0
-content/en/docs/concepts/security/hardening-guide/scheduler.md,"""Hardening Guide - Scheduler Configuration""",2026-08-17T15:02:42.436262+00:00,False,672,7,3,1,1.49,4,False,179,179,919,919,Fix some links in the En docs,3,3,45.97,96.0,0.19
-content/en/docs/concepts/security/linux-kernel-security-constraints.md,Linux kernel security constraints for Pods and containers,2026-08-17T15:02:42.436262+00:00,False,1879,14,4,0,0.0,14,False,699,699,866,866,Add dedicated seccomp node reference,3,2,35.43,134.21,0.81
-content/en/docs/concepts/security/linux-security.md,Security For Linux Nodes,2026-08-17T15:02:42.436262+00:00,False,118,1,2,0,0.0,3,False,421,421,1636,421,Add a linux-security doc entry,6,5,46.34,118.0,0.26
-content/en/docs/concepts/security/multi-tenancy.md,Multi-tenancy,2026-08-17T15:02:42.436262+00:00,False,4245,23,3,0,0.0,15,False,451,451,1545,1441,Drop links to third-party projects from multi-tenancy page,17,15,34.5,184.57,0.29
-content/en/docs/concepts/security/pod-security-admission.md,Pod Security Admission,2026-08-17T15:02:42.436262+00:00,False,753,7,3,1,1.33,13,False,892,892,1861,1861,AppArmor v1.30 docs update,24,15,33.71,107.57,0.48
-content/en/docs/concepts/security/pod-security-policy.md,Pod Security Policies,2026-08-17T15:02:42.436262+00:00,False,88,0,0,0,0.0,4,False,1380,1380,3635,1564,Tweak page about PSP removal,121,72,17.23,,0.38
-content/en/docs/concepts/security/pod-security-standards.md,Pod Security Standards,2026-08-17T15:02:42.436262+00:00,False,1628,14,4,0,0.0,6,False,375,375,2294,1862,nit-fix: Add empty value for host field in probes PSA,51,28,36.37,116.29,0.16
-content/en/docs/concepts/security/rbac-good-practices.md,Role Based Access Control Good Practices,2026-08-17T15:02:42.436262+00:00,False,1616,20,3,0,0.0,13,False,88,88,1595,1595,Clarify nodes/proxy access to privileged kubelet APIs,26,17,36.42,80.8,0.06
-content/en/docs/concepts/security/secrets-good-practices.md,Good practices for Kubernetes Secrets,2026-08-17T15:02:42.436262+00:00,False,641,11,4,0,0.0,4,False,421,421,1460,1460,secrets-good-practices.md to include a reference to swap best practices,14,6,34.29,58.27,0.29
-content/en/docs/concepts/security/security-checklist.md,Security Checklist,2026-08-17T15:02:42.436262+00:00,False,2718,13,4,0,0.0,56,False,534,534,1542,1542,Update security-checklist.md,27,11,38.91,209.08,0.35
-content/en/docs/concepts/security/service-accounts.md,Service Accounts,2026-08-17T15:02:42.436262+00:00,False,2234,14,4,1,0.45,26,False,153,153,1350,1350,Add documentation for ServiceAccountNodeAudienceRestriction feature,15,11,40.26,159.57,0.11
-content/en/docs/concepts/security/windows-security.md,Security For Windows Nodes,2026-08-17T15:02:42.436262+00:00,False,235,3,2,0,0.0,5,False,1521,1521,1636,1636,Batch fix links (3),4,4,26.77,78.33,0.93
-content/en/docs/concepts/services-networking/_index.md,"""Services, Load Balancing, and Networking""",2026-08-17T15:02:42.436262+00:00,False,687,2,2,0,0.0,17,False,146,146,3025,704,fix what's next content,17,12,34.36,343.5,0.05
-content/en/docs/concepts/services-networking/cluster-ip-allocation.md,Service ClusterIP allocation,2026-08-17T15:02:42.436262+00:00,False,580,8,3,1,1.72,4,False,661,661,1567,1396,Update cluster-ip-allocation.md,8,4,58.47,72.5,0.42
-content/en/docs/concepts/services-networking/dns-pod-service.md,DNS for Services and Pods,2026-08-17T15:02:42.436262+00:00,False,1849,14,3,10,5.41,5,False,384,384,3840,2018,Add documentation for the HostnameOverride Feature Gate,130,94,65.48,132.07,0.1
-content/en/docs/concepts/services-networking/dual-stack.md,IPv4/IPv6 dual-stack,2026-08-17T15:02:42.436262+00:00,False,1308,13,4,6,4.59,8,False,796,796,2533,2120,Fix references in IPv4/IPv6 dual-stack,38,25,48.74,100.62,0.31
-content/en/docs/concepts/services-networking/endpoint-slices.md,EndpointSlices,2026-08-17T15:02:42.436262+00:00,False,1182,13,4,1,0.85,4,False,420,420,2533,2210,Improve glossary entry for EndpointSlice,41,25,51.15,90.92,0.17
-content/en/docs/concepts/services-networking/gateway.md,Gateway API,2026-08-17T15:02:42.436262+00:00,False,1296,10,3,5,3.86,5,False,40,40,1032,1032,Fix GRPCRoute reference link,14,14,38.06,129.6,0.04
-content/en/docs/concepts/services-networking/ingress-controllers.md,Ingress Controllers,2026-08-17T15:02:42.436262+00:00,False,680,4,2,0,0.0,9,False,241,241,2737,2102,Update Alibaba Cloud Ingress provider reference,56,46,51.22,170.0,0.09
-content/en/docs/concepts/services-networking/ingress.md,Ingress,2026-08-17T15:02:42.436262+00:00,False,2788,25,4,15,5.38,26,False,265,265,3826,2245,Apply maintainer feedback,183,125,54.05,111.52,0.07
-content/en/docs/concepts/services-networking/network-policies.md,Network Policies,2026-08-17T15:02:42.436262+00:00,False,3082,19,3,6,1.95,8,False,125,125,3725,1334,fix(links): update kubernetes/community links from master to main,117,72,48.33,162.21,0.03
-content/en/docs/concepts/services-networking/service-traffic-policy.md,Service Internal Traffic Policy,2026-08-17T15:02:42.436262+00:00,False,193,3,2,1,5.18,3,False,1093,1093,1979,1979,Fix links,12,10,49.69,64.33,0.55
-content/en/docs/concepts/services-networking/service.md,Service,2026-08-17T15:02:42.436262+00:00,False,5467,40,4,18,3.29,33,False,75,75,3826,1452,Update HTTP/2 RFC reference from 7540 to 9113,343,207,53.38,136.68,0.02
-content/en/docs/concepts/services-networking/topology-aware-routing.md,Topology Aware Routing,2026-08-17T15:02:42.436262+00:00,False,1136,12,3,1,0.88,3,False,803,803,1983,1983,Fix broken link in topology-aware-routing.md,18,12,51.05,94.67,0.4
-content/en/docs/concepts/services-networking/windows-networking.md,Networking on Windows,2026-08-17T15:02:42.436262+00:00,False,1571,6,2,0,0.0,2,False,409,409,1543,1543,WinDSR to stable updates,8,6,37.3,261.83,0.27
-content/en/docs/concepts/storage/_index.md,"""Storage""",2026-08-17T15:02:42.436262+00:00,False,0,0,0,0,0.0,0,False,2246,1888,3025,3025,Add descriptions to Concept sections,3,3,,,0.74
-content/en/docs/concepts/storage/dynamic-provisioning.md,Dynamic Volume Provisioning,2026-08-17T15:02:42.436262+00:00,False,547,5,2,3,5.48,8,False,292,292,3219,3219,fix style in concepts/storage/dynamic-provisioning.md,25,22,38.75,109.4,0.09
-content/en/docs/concepts/storage/ephemeral-storage.md,Local ephemeral storage,2026-08-17T15:02:42.436262+00:00,False,1573,5,2,2,1.27,12,False,115,115,316,316,docs: clarify kubelet filesystem layouts,2,2,52.0,314.6,0.36
-content/en/docs/concepts/storage/ephemeral-volumes.md,Ephemeral Volumes,2026-08-17T15:02:42.436262+00:00,False,1340,11,3,2,1.49,18,False,316,316,2259,2259,Move ephemeral storage contents out of container resource page,29,18,39.17,121.82,0.14
-content/en/docs/concepts/storage/persistent-volumes.md,Persistent Volumes,2026-08-17T15:02:42.436262+00:00,False,5978,56,4,17,2.84,45,False,61,61,3826,2131,add volume populators page,288,174,51.36,106.75,0.02
-content/en/docs/concepts/storage/projected-volumes.md,Projected Volumes,2026-08-17T15:02:42.436262+00:00,False,1461,9,3,1,0.68,17,False,179,179,1747,1492,Fix some links in the En docs,26,15,48.49,162.33,0.1
-content/en/docs/concepts/storage/storage-capacity.md,Storage Capacity,2026-08-17T15:02:42.436262+00:00,False,620,6,2,0,0.0,5,False,1392,1392,2259,2259,KubeCon Docs Sprint: Update page weights for content/en/docs/concepts/storage.,11,5,41.17,103.33,0.62
-content/en/docs/concepts/storage/storage-classes.md,Storage Classes,2026-08-17T15:02:42.436262+00:00,False,2624,20,4,3,1.14,15,False,290,290,3195,2335,remove broken links to examples,123,81,48.52,131.2,0.09
-content/en/docs/concepts/storage/storage-limits.md,Node-specific Volume Limits,2026-08-17T15:02:42.436262+00:00,False,684,6,4,2,2.92,1,False,63,63,2972,2269,Fix typos in manual documentation pages,16,13,43.17,114.0,0.02
-content/en/docs/concepts/storage/volume-attributes-classes.md,Volume Attributes Classes,2026-08-17T15:02:42.436262+00:00,False,471,4,3,4,8.49,3,False,383,383,1039,1039,KEP-3751 VolumeAttributesClass GA in 1.34 Doc Update,8,3,34.03,117.75,0.37
-content/en/docs/concepts/storage/volume-health-monitoring.md,Volume Health Monitoring,2026-08-17T15:02:42.436262+00:00,False,265,2,2,0,0.0,1,False,1173,1173,1981,1173,tweak line wrappings in storage/,5,5,48.31,132.5,0.59
-content/en/docs/concepts/storage/volume-populators-and-data-sources.md,Volume Populators and Data Sources,2026-08-17T15:02:42.436262+00:00,False,826,6,3,3,3.63,9,False,61,61,61,61,add volume populators page,1,1,48.97,137.67,1.0
-content/en/docs/concepts/storage/volume-pvc-datasource.md,CSI Volume Cloning,2026-08-17T15:02:42.436262+00:00,False,417,3,2,1,2.4,1,False,1173,1173,2635,2575,tweak line wrappings in storage/,15,11,49.81,139.0,0.45
-content/en/docs/concepts/storage/volume-snapshot-classes.md,Volume Snapshot Classes,2026-08-17T15:02:42.436262+00:00,False,407,6,3,2,4.91,3,False,584,584,2880,2269,update VolumeSnapshotClass,17,14,28.23,67.83,0.2
-content/en/docs/concepts/storage/volume-snapshots.md,Volume Snapshots,2026-08-17T15:02:42.436262+00:00,False,1157,12,4,6,5.19,4,False,667,667,2880,1600,Add document link for volume group snapshots,30,17,45.96,96.42,0.23
-content/en/docs/concepts/storage/volumes.md,Volumes,2026-08-17T15:02:42.436262+00:00,False,5939,46,4,11,1.85,32,False,125,125,3826,1543,fix(links): update kubernetes/community links from master to main,301,184,51.73,129.11,0.03
-content/en/docs/concepts/storage/windows-storage.md,Windows Storage,2026-08-17T15:02:42.436262+00:00,False,353,2,5,0,0.0,6,False,992,992,1543,1543,Update In-tree storage driver status (#42415),8,6,32.96,176.5,0.64
-content/en/docs/concepts/windows/_index.md,"""Windows in Kubernetes""",2026-08-17T15:02:42.436262+00:00,False,129,0,0,0,0.0,10,False,1273,1273,2701,1273,Revise Windows in Kubernetes section,3,3,35.84,,0.47
-content/en/docs/concepts/windows/intro.md,Windows containers in Kubernetes,2026-08-17T15:02:42.436262+00:00,False,2502,21,4,0,0.0,16,False,125,125,1543,1543,fix(links): update kubernetes/community links from master to main,25,21,38.2,119.14,0.08
-content/en/docs/concepts/windows/user-guide.md,Guide for Running Windows Containers in Kubernetes,2026-08-17T15:02:42.436262+00:00,False,1256,12,3,6,4.78,7,False,270,270,2701,2442,Update the doc for windows server 2025 support,31,24,42.06,104.67,0.1
-content/en/docs/concepts/workloads/_index.md,"""Workloads""",2026-08-17T15:02:42.436262+00:00,False,707,2,2,0,0.0,25,False,112,112,3025,1826,Delete duplicate sentence from `content/en/docs/concept/workloads/_index.md`,17,11,49.41,353.5,0.04
-content/en/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale.md,Horizontal Pod Autoscaling,2026-08-17T15:02:42.436262+00:00,False,4198,25,3,11,2.62,24,False,154,154,3826,1794,fix: replace deprecated argument `--cpu-percent` with `--cpu`,145,103,45.52,167.92,0.04
-content/en/docs/concepts/workloads/autoscaling/vertical-pod-autoscale.md,Vertical Pod Autoscaling,2026-08-17T15:02:42.436262+00:00,False,1494,15,4,4,2.68,8,False,78,78,269,269,docs: add InPlace VPA update mode documentation,11,7,34.97,99.6,0.29
-content/en/docs/concepts/workloads/autoscaling.md,Autoscaling Workloads,2026-08-17T15:02:42.436262+00:00,False,726,10,4,0,0.0,12,False,267,267,929,925,Move HorizontalPodAutoscaler concept page,20,8,42.24,72.6,0.29
-content/en/docs/concepts/workloads/controllers/_index.md,"""Workload Management""",2026-08-17T15:02:42.436262+00:00,False,436,0,0,0,0.0,8,False,946,946,3025,1387,Rename concept section,7,3,53.05,,0.31
-content/en/docs/concepts/workloads/controllers/cron-jobs.md,CronJob,2026-08-17T15:02:42.436262+00:00,False,1908,14,3,2,1.05,9,False,95,95,3642,1349,update api-reference and ref shortcode callers for new URL structure,108,66,62.01,136.29,0.03
-content/en/docs/concepts/workloads/controllers/daemonset.md,DaemonSet,2026-08-17T15:02:42.436262+00:00,False,1729,16,3,2,1.16,32,False,95,95,3826,2530,update api-reference and ref shortcode callers for new URL structure,120,83,56.99,108.06,0.02
-content/en/docs/concepts/workloads/controllers/deployment.md,Deployments,2026-08-17T15:02:42.436262+00:00,False,5797,34,5,95,16.39,21,False,60,60,3826,2858,add cascade deletion description,251,147,51.39,170.5,0.02
-content/en/docs/concepts/workloads/controllers/job.md,Jobs,2026-08-17T15:02:42.436262+00:00,False,7704,39,4,26,3.37,40,False,95,95,3826,1368,update api-reference and ref shortcode callers for new URL structure,241,125,56.96,197.54,0.02
-content/en/docs/concepts/workloads/controllers/replicaset.md,ReplicaSet,2026-08-17T15:02:42.436262+00:00,False,2087,24,4,21,10.06,25,False,95,95,3805,2748,update api-reference and ref shortcode callers for new URL structure,105,75,49.28,86.96,0.02
-content/en/docs/concepts/workloads/controllers/replicationcontroller.md,ReplicationController,2026-08-17T15:02:42.436262+00:00,False,2231,27,3,7,3.14,22,False,95,95,3840,3422,update api-reference and ref shortcode callers for new URL structure,109,63,42.49,82.63,0.02
-content/en/docs/concepts/workloads/controllers/statefulset.md,StatefulSets,2026-08-17T15:02:42.436262+00:00,False,3201,35,5,6,1.87,27,False,75,75,3544,1900,KEP-961: update maxUnavailable docs to reflect the FG being off by default,119,76,50.14,91.46,0.02
-content/en/docs/concepts/workloads/controllers/ttlafterfinished.md,Automatic Cleanup for Finished Jobs,2026-08-17T15:02:42.436262+00:00,False,491,5,3,0,0.0,6,False,671,671,2880,1387,Fix typo of selector-selector,16,14,55.65,98.2,0.23
-content/en/docs/concepts/workloads/management.md,Managing Workloads,2026-08-17T15:02:42.436262+00:00,False,1499,18,4,45,30.02,18,False,194,194,3840,2269,docs: Remove outdated TODO comment from canary deployments,106,50,43.49,83.28,0.05
-content/en/docs/concepts/workloads/podgroup-api/_index.md,"""PodGroup API""",2026-08-17T15:02:42.436262+00:00,False,606,9,3,7,11.55,12,False,127,127,143,143,Move PodGroup DRA docs from Workload to PodGroup,4,2,52.67,67.33,0.89
-content/en/docs/concepts/workloads/podgroup-api/lifecycle.md,PodGroup Lifecycle,2026-08-17T15:02:42.436262+00:00,False,444,6,2,0,0.0,7,False,130,130,143,143,Address feedback,3,1,59.79,74.0,0.91
-content/en/docs/concepts/workloads/pods/_index.md,Pods,2026-08-17T15:02:42.436262+00:00,False,3176,22,4,3,0.94,35,False,29,29,3025,1340,Clarify what .spec.os.name constrains in the Pod OS section,73,46,49.58,144.36,0.01
-content/en/docs/concepts/workloads/pods/advanced-pod-config.md,Advanced Pod Configuration,2026-08-17T15:02:42.436262+00:00,False,961,19,4,1,1.04,14,False,329,329,407,407,docs: improve page content,3,1,15.83,50.58,0.81
-content/en/docs/concepts/workloads/pods/disruptions.md,Disruptions,2026-08-17T15:02:42.436262+00:00,False,2132,8,2,0,0.0,25,False,458,458,3338,3338,Fix wrong link to Node Autoscaling docs,67,46,43.74,266.5,0.14
-content/en/docs/concepts/workloads/pods/downward-api.md,Downward API,2026-08-17T15:02:42.436262+00:00,False,622,5,4,0,0.0,9,False,496,496,1609,1609,Update InPlacePodVerticalScaling docs for v1.33 beta (#50290),9,9,33.49,124.4,0.31
-content/en/docs/concepts/workloads/pods/ephemeral-containers.md,Ephemeral Containers,2026-08-17T15:02:42.436262+00:00,False,384,4,3,0,0.0,4,False,941,941,2534,2534,Improve docs for Pods,17,9,27.84,96.0,0.37
-content/en/docs/concepts/workloads/pods/init-containers.md,Init Containers,2026-08-17T15:02:42.436262+00:00,False,1699,11,4,16,9.42,15,False,698,698,3475,2593,38271 - Init Container concept clarity,90,62,52.11,154.45,0.2
-content/en/docs/concepts/workloads/pods/pod-condition.md,"""Pod Conditions""",2026-08-17T15:02:42.436262+00:00,False,1593,10,3,3,1.88,21,False,99,99,128,128,fix anchor link,3,1,53.38,159.3,0.77
-content/en/docs/concepts/workloads/pods/pod-hostname.md,Pod Hostname,2026-08-17T15:02:42.436262+00:00,False,616,4,2,2,3.25,1,False,375,375,384,384,Follow up PR 51414 comments,2,1,65.68,154.0,0.98
-content/en/docs/concepts/workloads/pods/pod-lifecycle.md,Pod Lifecycle,2026-08-17T15:02:42.436262+00:00,False,6941,41,5,12,1.73,52,False,87,87,3469,663,Make probes section on Pod lifecycle page lighter,152,99,50.0,169.29,0.03
-content/en/docs/concepts/workloads/pods/pod-qos.md,Pod Quality of Service Classes,2026-08-17T15:02:42.436262+00:00,False,1291,13,4,1,0.77,14,False,134,134,1299,1299,KEP-2570: Update Memory QoS documentation for v1.36,15,12,57.49,99.31,0.1
-content/en/docs/concepts/workloads/pods/probes.md,"Liveness, Readiness, and Startup Probes",2026-08-17T15:02:42.436262+00:00,False,2647,18,4,5,1.89,10,False,122,122,1109,134,move probes link,15,8,57.46,147.06,0.11
-content/en/docs/concepts/workloads/pods/scheduling-group.md,Scheduling Group,2026-08-17T15:02:42.436262+00:00,False,251,4,2,1,3.98,7,False,130,130,143,143,Address feedback,2,1,53.05,62.75,0.91
-content/en/docs/concepts/workloads/pods/sidecar-containers.md,Sidecar Containers,2026-08-17T15:02:42.436262+00:00,False,1180,9,3,0,0.0,12,False,210,210,1046,1046,docs: move sidecar Job clarification to first example,21,14,41.71,131.11,0.2
-content/en/docs/concepts/workloads/pods/static-pods.md,"""Static Pods""",2026-08-17T15:02:42.436262+00:00,False,383,4,2,0,0.0,6,False,123,123,123,123,Add Static Pods concept page,1,1,62.76,95.75,1.0
-content/en/docs/concepts/workloads/pods/user-namespaces.md,User Namespaces,2026-08-17T15:02:42.436262+00:00,False,1925,10,3,3,1.56,3,False,184,184,1470,1018,content: Remove old note about userns,31,8,59.1,192.5,0.13
-content/en/docs/concepts/workloads/resource-managers.md,Resource managers,2026-08-17T15:02:42.436262+00:00,False,3658,25,6,6,1.64,12,False,131,131,2127,609,KEP-5526: Pod Level Resource Managers documentation,14,10,40.57,146.32,0.06
-content/en/docs/concepts/workloads/workload-api/_index.md,"""Workload API""",2026-08-17T15:02:42.436262+00:00,False,478,6,3,1,2.09,16,False,116,116,272,158,Rename EnableWorkloadWithJob feature gate references to WorkloadWithJob,13,8,60.14,79.67,0.43
-content/en/docs/concepts/workloads/workload-api/disruption-and-priority.md,Pod Group Disruption and Priority,2026-08-17T15:02:42.436262+00:00,False,336,5,3,1,2.98,6,False,63,63,172,172,Fix typos in manual documentation pages,2,2,45.13,67.2,0.37
-content/en/docs/concepts/workloads/workload-api/policies.md,PodGroup Scheduling Policies,2026-08-17T15:02:42.436262+00:00,False,310,5,3,2,6.45,8,False,130,130,272,272,Address feedback,4,2,42.92,62.0,0.48
-content/en/docs/concepts/workloads/workload-api/topology-aware-scheduling.md,Topology-Aware Workload Scheduling,2026-08-17T15:02:42.436262+00:00,False,539,5,3,1,1.86,4,False,139,139,144,144,Apply review comments,2,2,39.42,107.8,0.97
+content/en/docs/concepts/_index.md,Concepts,2026-08-19T07:42:44.190519+00:00,False,33,0,0,0,0.0,0,False,2248,2248,3616,2994,"Add descriptions to Concept sections
+",50,26,,,0.62
+content/en/docs/concepts/architecture/_index.md,"""Cluster Architecture""",2026-08-19T07:42:44.190519+00:00,False,1144,22,3,0,0.0,15,False,144,144,3027,725,"fix architecture page orphan link
+",10,7,32.55,52.0,0.05
+content/en/docs/concepts/architecture/cgroups.md,About cgroup v2,2026-08-19T07:42:44.190519+00:00,False,841,8,3,1,1.19,7,False,54,54,1491,1471,"cgroupv2 node.js update
+",11,8,48.17,105.12,0.04
+content/en/docs/concepts/architecture/cloud-controller.md,Cloud Controller Manager,2026-08-19T07:42:44.190519+00:00,False,704,11,3,1,1.42,3,False,80,80,3218,2345,"Add theme_lock front matter to concepts overview pages
+",50,40,31.97,64.0,0.02
+content/en/docs/concepts/architecture/control-plane-node-communication.md,Communication between Nodes and the Control Plane,2026-08-19T07:42:44.190519+00:00,False,846,7,3,0,0.0,14,False,717,717,3822,1579,"Fix broken links from ""overview/components/#..."" to ""architecture/#..."" (#47724)
+",58,39,47.48,120.86,0.19
+content/en/docs/concepts/architecture/controller.md,Controllers,2026-08-19T07:42:44.190519+00:00,False,1034,7,3,0,0.0,6,False,717,717,2512,2512,"Fix broken links from ""overview/components/#..."" to ""architecture/#..."" (#47724)
+",22,15,59.04,147.71,0.29
+content/en/docs/concepts/architecture/garbage-collection.md,Garbage Collection,2026-08-19T07:42:44.190519+00:00,False,1278,11,4,0,0.0,19,False,302,302,1867,1867,"4210: mark as stable
+",26,22,38.21,116.18,0.16
+content/en/docs/concepts/architecture/leases.md,Leases,2026-08-19T07:42:44.190519+00:00,False,614,5,3,4,6.51,4,False,140,140,1358,1288,"Add docs for KEP-5366 ControllerManagerReleaseLeaderElectionLockOnExit feature gate
+",12,9,48.31,122.8,0.1
+content/en/docs/concepts/architecture/mixed-version-proxy.md,Mixed Version Proxy,2026-08-19T07:42:44.190519+00:00,False,813,6,3,2,2.46,5,False,174,174,1122,1099,"Doc update about MVP graduation to beta in 1.36
+",8,4,33.82,135.5,0.16
+content/en/docs/concepts/architecture/nodes.md,Nodes,2026-08-19T07:42:44.190519+00:00,False,1850,11,3,3,1.62,27,False,93,93,3828,2474,"docs: use glossary tooltip shortcode for containers on Nodes page
+",183,122,59.2,168.18,0.02
+content/en/docs/concepts/architecture/self-healing.md,Kubernetes Self-Healing,2026-08-19T07:42:44.190519+00:00,False,280,3,2,0,0.0,10,False,271,271,512,512,"Fix formatting
+",7,4,30.99,93.33,0.53
+content/en/docs/concepts/cluster-administration/_index.md,Cluster Administration,2026-08-19T07:42:44.190519+00:00,False,450,5,3,0,0.0,21,False,561,561,3027,1550,"Add a new page for mutating webhook good practices.
+",20,11,37.0,90.0,0.19
+content/en/docs/concepts/cluster-administration/addons.md,Installing Addons,2026-08-19T07:42:44.190519+00:00,False,818,6,2,0,0.0,5,False,127,127,3624,1209,"fix(links): update kubernetes/community links from master to main
+",86,66,34.13,136.33,0.04
+content/en/docs/concepts/cluster-administration/admission-webhooks-good-practices.md,Admission Webhook Good Practices,2026-08-19T07:42:44.190519+00:00,False,3830,37,3,2,0.52,23,False,333,333,561,561,"fix: typos
+",6,2,37.65,103.51,0.59
+content/en/docs/concepts/cluster-administration/certificates.md,Certificates,2026-08-19T07:42:44.190519+00:00,False,11,0,0,0,0.0,1,False,2040,2040,3224,3224,"Migrate https://kubernetes.io/docs/concepts/cluster-administration/certificates/ to tasks section
+",22,21,,,0.63
+content/en/docs/concepts/cluster-administration/compatibility-version.md,Compatibility Version For Kubernetes Control Plane Components,2026-08-19T07:42:44.190519+00:00,False,161,1,2,0,0.0,0,False,651,651,746,746,"remove min-compat-version
+",2,2,23.97,161.0,0.87
+content/en/docs/concepts/cluster-administration/coordinated-leader-election.md,Coordinated Leader Election,2026-08-19T07:42:44.190519+00:00,False,588,3,2,0,0.0,11,False,162,162,763,165,"Lease API
+",14,3,37.01,196.0,0.21
+content/en/docs/concepts/cluster-administration/dra.md,Good practices for Dynamic Resource Allocation as a Cluster Admin,2026-08-19T07:42:44.190519+00:00,False,1268,11,3,0,0.0,3,False,127,127,386,386,"fix(links): update kubernetes/community links from master to main
+",10,3,33.88,115.27,0.33
+content/en/docs/concepts/cluster-administration/flow-control.md,API Priority and Fairness,2026-08-19T07:42:44.190519+00:00,False,5819,26,4,1,0.17,4,False,127,127,2337,1671,"fix(links): update kubernetes/community links from master to main
+",68,32,39.22,223.81,0.05
+content/en/docs/concepts/cluster-administration/kube-state-metrics.md,Metrics for Kubernetes Object States,2026-08-19T07:42:44.190519+00:00,False,279,2,2,2,7.17,0,False,890,890,890,890,"Add section about kube-state-metrics
+",1,1,42.13,139.5,1.0
+content/en/docs/concepts/cluster-administration/logging.md,Logging Architecture,2026-08-19T07:42:44.190519+00:00,False,2221,13,4,11,4.95,13,False,670,670,3513,1550,"doc: document the usage of the PodLogsQuerySplitStreams feature
+",68,48,51.32,170.85,0.19
+content/en/docs/concepts/cluster-administration/networking.md,Cluster Networking,2026-08-19T07:42:44.190519+00:00,False,542,4,2,0,0.0,4,False,296,296,3842,1052,"Update content/en/docs/concepts/cluster-administration/networking.md
+",134,87,31.2,135.5,0.08
+content/en/docs/concepts/cluster-administration/node-autoscaling.md,Node Autoscaling,2026-08-19T07:42:44.190519+00:00,False,1831,17,4,0,0.0,8,False,65,65,862,862,"Fix typos in manual documentation pages
+",3,3,29.6,107.71,0.08
+content/en/docs/concepts/cluster-administration/node-shutdown.md,Node Shutdowns,2026-08-19T07:42:44.190519+00:00,False,1910,7,3,2,1.05,16,False,158,158,846,846,"Add unattended-upgrades conflict warning to node shutdown docs
+",8,7,52.42,272.86,0.19
+content/en/docs/concepts/cluster-administration/observability.md,Observability,2026-08-19T07:42:44.190519+00:00,False,1051,11,4,0,0.0,20,False,330,330,330,330,"docs: add observability overview page
+",1,1,31.62,95.55,1.0
+content/en/docs/concepts/cluster-administration/proxies.md,Proxies in Kubernetes,2026-08-19T07:42:44.190519+00:00,False,315,2,2,0,0.0,3,False,1394,1394,3382,3382,"KubeCon Docs Sprint: Update page weights for content/en/docs/concepts/cluster-administration.
+",13,12,44.41,157.5,0.41
+content/en/docs/concepts/cluster-administration/swap-memory-management.md,Swap memory management,2026-08-19T07:42:44.190519+00:00,False,2706,23,3,9,3.33,10,False,71,71,425,425,"Fix incorrect on disk in swap LimitedSwap section
+",7,5,45.83,117.65,0.17
+content/en/docs/concepts/cluster-administration/system-logs.md,System Logs,2026-08-19T07:42:44.190519+00:00,False,1454,9,3,11,7.57,5,False,127,127,2276,1609,"fix(links): update kubernetes/community links from master to main
+",19,12,52.59,161.56,0.06
+content/en/docs/concepts/cluster-administration/system-metrics.md,Metrics For Kubernetes System Components,2026-08-19T07:42:44.190519+00:00,False,1708,11,4,10,5.85,5,False,133,133,2384,1410,"polish and added example per feedback
+",40,24,50.4,155.27,0.06
+content/en/docs/concepts/cluster-administration/system-traces.md,Traces For Kubernetes System Components,2026-08-19T07:42:44.190519+00:00,False,645,8,4,3,4.65,1,False,412,412,1855,1848,"KEP-2831: kubelet tracing GA in 1.34
+",19,12,34.01,80.62,0.22
+content/en/docs/concepts/configuration/_index.md,"""Configuration""",2026-08-19T07:42:44.190519+00:00,False,0,0,0,0,0.0,0,False,2248,1889,3027,3027,"Add descriptions to Concept sections
+",3,3,,,0.74
+content/en/docs/concepts/configuration/configmap.md,ConfigMaps,2026-08-19T07:42:44.190519+00:00,False,1594,9,4,9,5.65,7,False,271,271,2326,2248,"Fix formatting of kubectl logs command
+",47,31,57.07,177.11,0.12
+content/en/docs/concepts/configuration/manage-resources-containers.md,Resource Management for Pods and Containers,2026-08-19T07:42:44.190519+00:00,False,3936,32,5,11,2.79,37,False,56,56,3459,1840,"Fix incorrect ValidatingAdmissionPolicy reference
+",146,104,50.47,123.0,0.02
+content/en/docs/concepts/configuration/organize-cluster-access-kubeconfig.md,Organizing Cluster Access Using kubeconfig Files,2026-08-19T07:42:44.190519+00:00,False,897,7,2,3,3.34,5,False,1588,1588,3283,3283,"Docs fix for kubectl proxy configuration
+",16,15,55.45,128.14,0.48
+content/en/docs/concepts/configuration/secret.md,Secrets,2026-08-19T07:42:44.190519+00:00,False,4157,31,5,7,1.68,41,False,26,26,3828,1422,"Replace code with code_sample shortcode
+",218,137,50.91,134.1,0.01
+content/en/docs/concepts/configuration/windows-resource-management.md,Resource Management for Windows nodes,2026-08-19T07:42:44.190519+00:00,False,494,3,2,0,0.0,1,False,1534,1534,1638,1638,"Updating Windows intro and resource management pages (#34083)
+",2,1,45.79,164.67,0.94
+content/en/docs/concepts/containers/_index.md,Containers,2026-08-19T07:42:44.190519+00:00,False,271,2,2,0,0.0,3,False,675,675,3027,2248,"Update _index.md
+",14,8,43.61,135.5,0.22
+content/en/docs/concepts/containers/container-environment.md,Container Environment,2026-08-19T07:42:44.190519+00:00,False,228,4,3,1,4.39,5,False,261,261,3402,3402,"Clarify Service-to-Pod wording and normalize DNS addon spelling
+",26,19,31.35,57.0,0.08
+content/en/docs/concepts/containers/container-lifecycle-hooks.md,Container Lifecycle Hooks,2026-08-19T07:42:44.190519+00:00,False,901,7,3,1,1.11,5,False,181,181,3828,3402,"Fix some links in the En docs
+",69,45,52.14,128.71,0.05
+content/en/docs/concepts/containers/cri.md,Container Runtime Interface (CRI),2026-08-19T07:42:44.190519+00:00,False,345,4,2,0,0.0,1,False,187,187,1729,532,"Add documentation for CRIListStreaming feature gate
+",9,7,51.48,86.25,0.11
+content/en/docs/concepts/containers/images.md,Images,2026-08-19T07:42:44.190519+00:00,False,3669,23,4,4,1.09,17,False,185,185,3842,1253,"Fix misleading imagePullPolicy: Always description
+",136,90,49.03,159.52,0.05
+content/en/docs/concepts/containers/runtime-class.md,Runtime Class,2026-08-19T07:42:44.190519+00:00,False,731,11,4,4,5.47,8,False,97,97,2882,2631,"update api-reference and ref shortcode callers for new URL structure
+",44,29,41.5,66.45,0.03
+content/en/docs/concepts/extend-kubernetes/_index.md,Extending Kubernetes,2026-08-19T07:42:44.190519+00:00,False,1939,23,4,0,0.0,42,False,127,127,3016,1510,"fix(links): update kubernetes/community links from master to main
+",28,17,42.31,84.3,0.04
+content/en/docs/concepts/extend-kubernetes/api-extension/_index.md,Extending the Kubernetes API,2026-08-19T07:42:44.190519+00:00,False,142,0,0,0,0.0,2,False,144,144,3016,1062,"remove duplicate links
+",10,5,47.55,,0.05
+content/en/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation.md,Kubernetes API Aggregation Layer,2026-08-19T07:42:44.190519+00:00,False,307,3,3,0,0.0,6,False,181,181,3340,2271,"Fix some links in the En docs
+",21,14,40.3,102.33,0.05
+content/en/docs/concepts/extend-kubernetes/api-extension/custom-resources.md,Custom Resources,2026-08-19T07:42:44.190519+00:00,False,3000,20,3,2,0.67,26,False,298,298,3344,2393,"Add SVM beta docs
+",81,56,49.24,150.0,0.09
+content/en/docs/concepts/extend-kubernetes/compute-storage-net/_index.md,"Compute, Storage, and Networking Extensions",2026-08-19T07:42:44.190519+00:00,False,243,0,0,0,0.0,5,False,127,127,3016,1510,"fix(links): update kubernetes/community links from master to main
+",4,4,48.44,,0.04
+content/en/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins.md,Device Plugins,2026-08-19T07:42:44.190519+00:00,False,2307,14,3,9,3.9,14,False,120,120,3246,1916,"Clarify hardcoded device plugins path in documentation
+",106,71,42.62,164.79,0.04
+content/en/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins.md,Network Plugins,2026-08-19T07:42:44.190519+00:00,False,479,6,3,3,6.26,6,False,749,749,3822,2920,"Update content/en/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins.md
+",76,44,45.52,79.83,0.2
+content/en/docs/concepts/extend-kubernetes/operator.md,Operator pattern,2026-08-19T07:42:44.190519+00:00,False,812,7,2,1,1.23,5,False,398,398,2595,2595,"docs(operators): update URI to KubeOps
+",36,26,39.57,116.0,0.15
+content/en/docs/concepts/overview/_index.md,"""Overview""",2026-08-19T07:42:44.190519+00:00,False,1412,4,2,0,0.0,6,False,80,80,3027,1363,"Add theme_lock front matter to concepts overview pages
+",21,14,31.92,353.0,0.03
+content/en/docs/concepts/overview/components.md,Kubernetes Components,2026-08-19T07:42:44.190519+00:00,False,291,5,3,0,0.0,14,False,80,80,3828,725,"Add theme_lock front matter to concepts overview pages
+",92,60,35.87,58.2,0.02
+content/en/docs/concepts/overview/kubectl.md,The kubectl command-line tool,2026-08-19T07:42:44.190519+00:00,False,594,7,2,0,0.0,19,False,170,170,170,170,"cross-link from related pages and remove thirdparty shortcode
+",2,1,49.87,84.86,1.0
+content/en/docs/concepts/overview/kubernetes-api.md,The Kubernetes API,2026-08-19T07:42:44.190519+00:00,False,1629,12,3,2,1.23,12,False,588,588,3828,1595,"Fix feature gate name conflicts (2/2)
+",112,61,40.99,135.75,0.15
+content/en/docs/concepts/overview/working-with-objects/_index.md,Objects In Kubernetes,2026-08-19T07:42:44.190519+00:00,False,1067,6,3,2,1.87,17,False,267,267,3027,1683,"Migrate K8s Configuration Good Practices to blog
+",18,7,46.43,177.83,0.09
+content/en/docs/concepts/overview/working-with-objects/annotations.md,Annotations,2026-08-19T07:42:44.190519+00:00,False,577,3,2,2,3.47,2,False,54,54,3616,3046,"docs: apply reviewer suggestions - KiB unit, bold all, add CBOR note
+",26,20,41.64,192.33,0.01
+content/en/docs/concepts/overview/working-with-objects/common-labels.md,Recommended Labels,2026-08-19T07:42:44.190519+00:00,False,570,5,3,7,12.28,0,False,846,846,2962,2962,"Update common-labels.md
+",15,14,48.38,114.0,0.29
+content/en/docs/concepts/overview/working-with-objects/field-selectors.md,Field Selectors,2026-08-19T07:42:44.190519+00:00,False,343,6,3,6,17.49,4,False,118,118,2953,2953,"Add service field selectors
+",20,15,54.54,57.17,0.04
+content/en/docs/concepts/overview/working-with-objects/finalizers.md,Finalizers,2026-08-19T07:42:44.190519+00:00,False,674,3,2,0,0.0,2,False,478,478,1867,1867,"Clarify that custom finalizers names must be publicly qualified finalizer names
+",14,10,42.66,224.67,0.26
+content/en/docs/concepts/overview/working-with-objects/labels.md,Labels and Selectors,2026-08-19T07:42:44.190519+00:00,False,1582,14,4,23,14.54,19,False,157,157,3842,1296,"docs: address review feedback on labels example
+",82,48,46.11,113.0,0.04
+content/en/docs/concepts/overview/working-with-objects/names.md,Object Names and IDs,2026-08-19T07:42:44.190519+00:00,False,638,7,3,1,1.57,6,False,203,203,3842,2372,"docs: clarify object identity uniqueness and NodeRestriction label constraints
+",54,33,53.96,91.14,0.05
+content/en/docs/concepts/overview/working-with-objects/namespaces.md,Namespaces,2026-08-19T07:42:44.190519+00:00,False,670,10,3,5,7.46,12,False,242,242,3828,2614,"Update namespace docs
+",80,55,53.85,67.0,0.06
+content/en/docs/concepts/overview/working-with-objects/object-management.md,Kubernetes Object Management,2026-08-19T07:42:44.190519+00:00,False,823,11,3,6,7.29,7,False,1683,1683,3500,3497,"Reorganize Working with Kubernetes Objects section
+",33,20,24.99,74.82,0.48
+content/en/docs/concepts/overview/working-with-objects/owners-dependents.md,Owners and Dependents,2026-08-19T07:42:44.190519+00:00,False,614,3,2,0,0.0,8,False,1683,1683,1867,1867,"Reorganize Working with Kubernetes Objects section
+",6,4,43.3,204.67,0.9
+content/en/docs/concepts/overview/working-with-objects/storage-version.md,Storage Versions,2026-08-19T07:42:44.190519+00:00,False,1037,4,2,1,0.96,4,False,135,135,298,298,"Fix typos in docs: limtations, storege, Althought
+",3,3,50.58,259.25,0.45
+content/en/docs/concepts/policy/_index.md,"""Policies""",2026-08-19T07:42:44.190519+00:00,False,412,6,3,0,0.0,9,False,968,968,3027,1179,"fix typos
+",7,5,15.13,68.67,0.32
+content/en/docs/concepts/policy/limit-range.md,Limit Ranges,2026-08-19T07:42:44.190519+00:00,False,838,4,2,1,1.19,9,False,226,226,2660,1408,"Update limit-range.md
+",37,27,44.17,209.5,0.08
+content/en/docs/concepts/policy/pid-limiting.md,Process ID Limits And Reservations,2026-08-19T07:42:44.190519+00:00,False,806,4,2,0,0.0,6,False,607,607,2161,2161,"Update pid-limiting.md
+",7,5,55.09,201.5,0.28
+content/en/docs/concepts/policy/resource-quotas.md,Resource Quotas,2026-08-19T07:42:44.190519+00:00,False,3354,24,5,30,8.94,35,False,271,271,3842,481,"Remove extra brackets from quota
+",126,76,50.21,139.75,0.07
+content/en/docs/concepts/scheduling-eviction/_index.md,"""Scheduling, Preemption and Eviction""",2026-08-19T07:42:44.190519+00:00,False,124,2,2,0,0.0,18,False,173,173,2324,1940,"KEP-5710: Update scheduler docs for workload aware preemption
+",16,12,,62.0,0.07
+content/en/docs/concepts/scheduling-eviction/api-eviction.md,API-initiated Eviction,2026-08-19T07:42:44.190519+00:00,False,570,4,2,3,5.26,7,False,496,496,1940,1901,"Update docs for deprecation of Endpoints API (#49831)
+",6,4,51.99,142.5,0.26
+content/en/docs/concepts/scheduling-eviction/assign-pod-node.md,Assigning Pods to Nodes,2026-08-19T07:42:44.190519+00:00,False,3694,22,4,8,2.17,25,False,190,190,3842,1831,"revert: restore original descriptions for Gt and Lt operators
+",188,115,52.79,167.91,0.05
+content/en/docs/concepts/scheduling-eviction/dynamic-resource-allocation.md,Dynamic Resource Allocation,2026-08-19T07:42:44.190519+00:00,False,8192,47,5,26,3.17,36,False,97,97,1365,185,"update api-reference and ref shortcode callers for new URL structure
+",72,34,40.63,174.3,0.07
+content/en/docs/concepts/scheduling-eviction/gang-scheduling.md,Gang Scheduling,2026-08-19T07:42:44.190519+00:00,False,299,2,2,0,0.0,9,False,131,131,273,273,"Address feedback
+",6,3,62.02,149.5,0.48
+content/en/docs/concepts/scheduling-eviction/kube-scheduler.md,Kubernetes Scheduler,2026-08-19T07:42:44.190519+00:00,False,602,4,3,0,0.0,13,False,914,914,2597,2597,"Fix spelling mistake in kube scheduler
+",30,21,45.9,150.5,0.35
+content/en/docs/concepts/scheduling-eviction/node-declared-features.md,Node Declared Features,2026-08-19T07:42:44.190519+00:00,False,306,3,2,0,0.0,2,False,300,300,300,300,"Docs update for Node Declared Features (KEP-5328) alpha
+",1,1,48.36,102.0,1.0
+content/en/docs/concepts/scheduling-eviction/node-pressure-eviction.md,Node-pressure Eviction,2026-08-19T07:42:44.190519+00:00,False,3552,30,4,2,0.56,18,False,28,28,1940,1709,"revert PR 56329 which should have targeted the dev-1.37 branch
+",34,25,51.57,118.4,0.01
+content/en/docs/concepts/scheduling-eviction/pod-overhead.md,Pod Overhead,2026-08-19T07:42:44.190519+00:00,False,738,5,3,13,17.62,5,False,860,860,2536,2337,"Explain RuntimeClass name in Pod Overhead concept (#45454)
+",23,17,50.64,147.6,0.34
+content/en/docs/concepts/scheduling-eviction/pod-priority-preemption.md,Pod Priority and Preemption,2026-08-19T07:42:44.190519+00:00,False,2462,21,4,3,1.22,12,False,575,575,3246,2944,"Drop stale reviewers
+",66,45,49.53,117.24,0.18
+content/en/docs/concepts/scheduling-eviction/pod-scheduling-readiness.md,Pod Scheduling Readiness,2026-08-19T07:42:44.190519+00:00,False,487,5,2,7,14.37,0,False,910,910,1385,1385,"promote feature PodSchedulingReadiness to stable
+",13,7,55.46,97.4,0.66
+content/en/docs/concepts/scheduling-eviction/podgroup-scheduling.md,PodGroup Scheduling,2026-08-19T07:42:44.190519+00:00,False,1159,11,3,1,0.86,8,False,65,65,174,174,"Fix typos in manual documentation pages
+",4,4,39.35,105.36,0.37
+content/en/docs/concepts/scheduling-eviction/resource-bin-packing.md,Resource Bin Packing,2026-08-19T07:42:44.190519+00:00,False,686,5,3,12,17.49,8,False,88,88,2538,2101,"Address review: clarify scheduler does not move existing pods
+",27,20,48.21,137.2,0.03
+content/en/docs/concepts/scheduling-eviction/scheduler-perf-tuning.md,Scheduler Performance Tuning,2026-08-19T07:42:44.190519+00:00,False,1143,8,3,4,3.5,7,False,173,173,2882,2414,"Opportunistic Batching feature docs update for 1.36
+",28,17,57.54,142.88,0.06
+content/en/docs/concepts/scheduling-eviction/scheduling-framework.md,Scheduling Framework,2026-08-19T07:42:44.190519+00:00,False,1581,21,4,3,1.9,4,False,411,411,2626,2337,"KEP-4247: Graduate SchedulerQueueingHints feature to GA
+",39,24,57.6,75.29,0.16
+content/en/docs/concepts/scheduling-eviction/taint-and-toleration.md,Taints and Tolerations,2026-08-19T07:42:44.190519+00:00,False,2437,7,2,10,4.1,14,False,190,190,3288,2474,"fix incorrect definition of Gt & Lt operators in taints % tolerations
+",86,58,54.91,348.14,0.06
+content/en/docs/concepts/scheduling-eviction/topology-aware-scheduling.md,Topology-Aware Workload Scheduling,2026-08-19T07:42:44.190519+00:00,False,276,3,3,1,3.62,4,False,46,46,141,141,"docs: fix grammar in topology-aware scheduling concept page
+",2,2,41.43,92.0,0.33
+content/en/docs/concepts/scheduling-eviction/topology-spread-constraints.md,Pod Topology Spread Constraints,2026-08-19T07:42:44.190519+00:00,False,3371,17,4,7,2.08,14,False,296,296,2537,1561,"Remove node label typo section per reviewer feedback
+",96,49,48.51,198.29,0.12
+content/en/docs/concepts/scheduling-eviction/workload-aware-preemption.md,Workload-Aware Preemption,2026-08-19T07:42:44.190519+00:00,False,379,2,2,0,0.0,9,False,173,173,173,173,"KEP-5710: Update scheduler docs for workload aware preemption
+",1,1,43.3,189.5,1.0
+content/en/docs/concepts/security/_index.md,"""Security""",2026-08-19T07:42:44.190519+00:00,False,616,9,3,0,0.0,24,False,561,561,2637,1060,"Add a new page for mutating webhook good practices.
+",10,7,19.36,68.44,0.21
+content/en/docs/concepts/security/api-server-bypass-risks.md,Kubernetes API Server Bypass Risks,2026-08-19T07:42:44.190519+00:00,False,1242,8,3,0,0.0,7,False,202,202,1467,1467,"Strengthen and clarify nodes/proxy warnings
+",6,6,46.58,155.25,0.14
+content/en/docs/concepts/security/application-security-checklist.md,Application Security Checklist,2026-08-19T07:42:44.190519+00:00,False,791,11,3,0,0.0,8,False,651,651,829,652,"Fix a clause about request/limit in app-security-checklist
+",3,2,34.44,71.91,0.79
+content/en/docs/concepts/security/cloud-native-security.md,"""Cloud Native Security and Kubernetes""",2026-08-19T07:42:44.190519+00:00,False,1310,13,3,0,0.0,23,False,270,270,2637,927,"Remove hyphen for end users of the CNCF ecosystem.
+",16,8,30.28,100.77,0.1
+content/en/docs/concepts/security/controlling-access.md,Controlling Access to the Kubernetes API,2026-08-19T07:42:44.190519+00:00,False,956,6,2,2,2.09,21,False,1174,1174,3842,2299,"Tweak line wrappings in /services-networking/ingress.md
+",69,46,37.11,159.33,0.31
+content/en/docs/concepts/security/hardening-guide/authentication-mechanisms.md,Hardening Guide - Authentication Mechanisms,2026-08-19T07:42:44.190519+00:00,False,1189,9,2,0,0.0,11,False,644,644,1104,1095,"Add reference to authentication-mechanisms.md
+",7,3,24.07,132.11,0.58
+content/en/docs/concepts/security/hardening-guide/dynamic-resource-allocation.md,"""Hardening Guide - Dynamic Resource Allocation""",2026-08-19T07:42:44.190519+00:00,False,276,8,3,3,10.87,4,False,133,133,133,133,"update with tim suggestions
+",1,1,30.65,34.5,1.0
+content/en/docs/concepts/security/hardening-guide/scheduler.md,"""Hardening Guide - Scheduler Configuration""",2026-08-19T07:42:44.190519+00:00,False,672,7,3,1,1.49,4,False,181,181,920,920,"Fix some links in the En docs
+",3,3,45.97,96.0,0.2
+content/en/docs/concepts/security/linux-kernel-security-constraints.md,Linux kernel security constraints for Pods and containers,2026-08-19T07:42:44.190519+00:00,False,1879,14,4,0,0.0,14,False,700,700,868,868,"Add dedicated seccomp node reference
+",3,2,35.43,134.21,0.81
+content/en/docs/concepts/security/linux-security.md,Security For Linux Nodes,2026-08-19T07:42:44.190519+00:00,False,118,1,2,0,0.0,3,False,422,422,1638,422,"Add a linux-security doc entry
+",6,5,46.34,118.0,0.26
+content/en/docs/concepts/security/multi-tenancy.md,Multi-tenancy,2026-08-19T07:42:44.190519+00:00,False,4245,23,3,0,0.0,15,False,453,453,1547,1443,"Drop links to third-party projects from multi-tenancy page
+",17,15,34.5,184.57,0.29
+content/en/docs/concepts/security/pod-security-admission.md,Pod Security Admission,2026-08-19T07:42:44.190519+00:00,False,753,7,3,1,1.33,13,False,894,894,1863,1863,"AppArmor v1.30 docs update
+",24,15,33.71,107.57,0.48
+content/en/docs/concepts/security/pod-security-policy.md,Pod Security Policies,2026-08-19T07:42:44.190519+00:00,False,88,0,0,0,0.0,4,False,1382,1382,3637,1566,"Tweak page about PSP removal
+",121,72,17.23,,0.38
+content/en/docs/concepts/security/pod-security-standards.md,Pod Security Standards,2026-08-19T07:42:44.190519+00:00,False,1628,14,4,0,0.0,6,False,377,377,2296,1864,"nit-fix: Add empty value for host field in probes PSA
+",51,28,36.37,116.29,0.16
+content/en/docs/concepts/security/rbac-good-practices.md,Role Based Access Control Good Practices,2026-08-19T07:42:44.190519+00:00,False,1616,20,3,0,0.0,13,False,90,90,1597,1597,"Clarify nodes/proxy access to privileged kubelet APIs
+",26,17,36.42,80.8,0.06
+content/en/docs/concepts/security/secrets-good-practices.md,Good practices for Kubernetes Secrets,2026-08-19T07:42:44.190519+00:00,False,641,11,4,0,0.0,4,False,422,422,1462,1462,"secrets-good-practices.md to include a reference to swap best practices
+",14,6,34.29,58.27,0.29
+content/en/docs/concepts/security/security-checklist.md,Security Checklist,2026-08-19T07:42:44.190519+00:00,False,2718,13,4,0,0.0,56,False,536,536,1544,1544,"Update security-checklist.md
+",27,11,38.91,209.08,0.35
+content/en/docs/concepts/security/service-accounts.md,Service Accounts,2026-08-19T07:42:44.190519+00:00,False,2234,14,4,1,0.45,26,False,155,155,1352,1352,"Add documentation for ServiceAccountNodeAudienceRestriction feature
+",15,11,40.26,159.57,0.11
+content/en/docs/concepts/security/windows-security.md,Security For Windows Nodes,2026-08-19T07:42:44.190519+00:00,False,235,3,2,0,0.0,5,False,1522,1522,1638,1638,"Batch fix links (3)
+",4,4,26.77,78.33,0.93
+content/en/docs/concepts/services-networking/_index.md,"""Services, Load Balancing, and Networking""",2026-08-19T07:42:44.190519+00:00,False,687,2,2,0,0.0,17,False,147,147,3027,705,"fix what's next content
+",17,12,34.36,343.5,0.05
+content/en/docs/concepts/services-networking/cluster-ip-allocation.md,Service ClusterIP allocation,2026-08-19T07:42:44.190519+00:00,False,580,8,3,1,1.72,4,False,663,663,1568,1397,"Update cluster-ip-allocation.md
+",8,4,58.47,72.5,0.42
+content/en/docs/concepts/services-networking/dns-pod-service.md,DNS for Services and Pods,2026-08-19T07:42:44.190519+00:00,False,1849,14,3,10,5.41,5,False,386,386,3842,2020,"Add documentation for the HostnameOverride Feature Gate
+",130,94,65.48,132.07,0.1
+content/en/docs/concepts/services-networking/dual-stack.md,IPv4/IPv6 dual-stack,2026-08-19T07:42:44.190519+00:00,False,1308,13,4,6,4.59,8,False,798,798,2535,2122,"Fix references in IPv4/IPv6 dual-stack
+",38,25,48.74,100.62,0.31
+content/en/docs/concepts/services-networking/endpoint-slices.md,EndpointSlices,2026-08-19T07:42:44.190519+00:00,False,1182,13,4,1,0.85,4,False,422,422,2535,2212,"Improve glossary entry for EndpointSlice
+",41,25,51.15,90.92,0.17
+content/en/docs/concepts/services-networking/gateway.md,Gateway API,2026-08-19T07:42:44.190519+00:00,False,1296,10,3,5,3.86,5,False,41,41,1034,1034,"Fix GRPCRoute reference link
+",14,14,38.06,129.6,0.04
+content/en/docs/concepts/services-networking/ingress-controllers.md,Ingress Controllers,2026-08-19T07:42:44.190519+00:00,False,680,4,2,0,0.0,9,False,242,242,2739,2104,"Update Alibaba Cloud Ingress provider reference
+",56,46,51.22,170.0,0.09
+content/en/docs/concepts/services-networking/ingress.md,Ingress,2026-08-19T07:42:44.190519+00:00,False,2788,25,4,15,5.38,26,False,267,267,3828,2247,"Apply maintainer feedback
+",183,125,54.05,111.52,0.07
+content/en/docs/concepts/services-networking/network-policies.md,Network Policies,2026-08-19T07:42:44.190519+00:00,False,3082,19,3,6,1.95,8,False,127,127,3727,1335,"fix(links): update kubernetes/community links from master to main
+",117,72,48.33,162.21,0.03
+content/en/docs/concepts/services-networking/service-traffic-policy.md,Service Internal Traffic Policy,2026-08-19T07:42:44.190519+00:00,False,193,3,2,1,5.18,3,False,1095,1095,1981,1981,"Fix links
+",12,10,49.69,64.33,0.55
+content/en/docs/concepts/services-networking/service.md,Service,2026-08-19T07:42:44.190519+00:00,False,5467,40,4,18,3.29,33,False,76,76,3828,1454,"Update HTTP/2 RFC reference from 7540 to 9113
+",343,207,53.38,136.68,0.02
+content/en/docs/concepts/services-networking/topology-aware-routing.md,Topology Aware Routing,2026-08-19T07:42:44.190519+00:00,False,1136,12,3,1,0.88,3,False,805,805,1985,1985,"Fix broken link in topology-aware-routing.md
+",18,12,51.05,94.67,0.41
+content/en/docs/concepts/services-networking/windows-networking.md,Networking on Windows,2026-08-19T07:42:44.190519+00:00,False,1571,6,2,0,0.0,2,False,411,411,1545,1545,"WinDSR to stable updates
+",8,6,37.3,261.83,0.27
+content/en/docs/concepts/storage/_index.md,"""Storage""",2026-08-19T07:42:44.190519+00:00,False,0,0,0,0,0.0,0,False,2248,1889,3027,3027,"Add descriptions to Concept sections
+",3,3,,,0.74
+content/en/docs/concepts/storage/dynamic-provisioning.md,Dynamic Volume Provisioning,2026-08-19T07:42:44.190519+00:00,False,547,5,2,3,5.48,8,False,293,293,3221,3221,"fix style in concepts/storage/dynamic-provisioning.md
+",25,22,38.75,109.4,0.09
+content/en/docs/concepts/storage/ephemeral-storage.md,Local ephemeral storage,2026-08-19T07:42:44.190519+00:00,False,1573,5,2,2,1.27,12,False,117,117,317,317,"docs: clarify kubelet filesystem layouts
+",2,2,52.0,314.6,0.37
+content/en/docs/concepts/storage/ephemeral-volumes.md,Ephemeral Volumes,2026-08-19T07:42:44.190519+00:00,False,1340,11,3,2,1.49,18,False,317,317,2260,2260,"Move ephemeral storage contents out of container resource page
+",29,18,39.17,121.82,0.14
+content/en/docs/concepts/storage/persistent-volumes.md,Persistent Volumes,2026-08-19T07:42:44.190519+00:00,False,5978,56,4,17,2.84,45,False,63,63,3828,2133,"add volume populators page
+",288,174,51.36,106.75,0.02
+content/en/docs/concepts/storage/projected-volumes.md,Projected Volumes,2026-08-19T07:42:44.190519+00:00,False,1461,9,3,1,0.68,17,False,181,181,1749,1493,"Fix some links in the En docs
+",26,15,48.49,162.33,0.1
+content/en/docs/concepts/storage/storage-capacity.md,Storage Capacity,2026-08-19T07:42:44.190519+00:00,False,620,6,2,0,0.0,5,False,1394,1394,2260,2260,"KubeCon Docs Sprint: Update page weights for content/en/docs/concepts/storage.
+",11,5,41.17,103.33,0.62
+content/en/docs/concepts/storage/storage-classes.md,Storage Classes,2026-08-19T07:42:44.190519+00:00,False,2624,20,4,3,1.14,15,False,292,292,3197,2337,"remove broken links to examples
+",123,81,48.52,131.2,0.09
+content/en/docs/concepts/storage/storage-limits.md,Node-specific Volume Limits,2026-08-19T07:42:44.190519+00:00,False,684,6,4,2,2.92,1,False,65,65,2974,2271,"Fix typos in manual documentation pages
+",16,13,43.17,114.0,0.02
+content/en/docs/concepts/storage/volume-attributes-classes.md,Volume Attributes Classes,2026-08-19T07:42:44.190519+00:00,False,471,4,3,4,8.49,3,False,385,385,1041,1041,"KEP-3751 VolumeAttributesClass GA in 1.34 Doc Update
+",8,3,34.03,117.75,0.37
+content/en/docs/concepts/storage/volume-health-monitoring.md,Volume Health Monitoring,2026-08-19T07:42:44.190519+00:00,False,265,2,2,0,0.0,1,False,1174,1174,1983,1174,"tweak line wrappings in storage/
+",5,5,48.31,132.5,0.59
+content/en/docs/concepts/storage/volume-populators-and-data-sources.md,Volume Populators and Data Sources,2026-08-19T07:42:44.190519+00:00,False,826,6,3,3,3.63,9,False,63,63,63,63,"add volume populators page
+",1,1,48.97,137.67,1.0
+content/en/docs/concepts/storage/volume-pvc-datasource.md,CSI Volume Cloning,2026-08-19T07:42:44.190519+00:00,False,417,3,2,1,2.4,1,False,1174,1174,2637,2577,"tweak line wrappings in storage/
+",15,11,49.81,139.0,0.45
+content/en/docs/concepts/storage/volume-snapshot-classes.md,Volume Snapshot Classes,2026-08-19T07:42:44.190519+00:00,False,407,6,3,2,4.91,3,False,586,586,2882,2271,"update VolumeSnapshotClass
+",17,14,28.23,67.83,0.2
+content/en/docs/concepts/storage/volume-snapshots.md,Volume Snapshots,2026-08-19T07:42:44.190519+00:00,False,1157,12,4,6,5.19,4,False,669,669,2882,1602,"Add document link for volume group snapshots
+",30,17,45.96,96.42,0.23
+content/en/docs/concepts/storage/volumes.md,Volumes,2026-08-19T07:42:44.190519+00:00,False,5939,46,4,11,1.85,32,False,127,127,3828,1545,"fix(links): update kubernetes/community links from master to main
+",301,184,51.73,129.11,0.03
+content/en/docs/concepts/storage/windows-storage.md,Windows Storage,2026-08-19T07:42:44.190519+00:00,False,353,2,5,0,0.0,6,False,994,994,1545,1545,"Update In-tree storage driver status (#42415)
+",8,6,32.96,176.5,0.64
+content/en/docs/concepts/windows/_index.md,"""Windows in Kubernetes""",2026-08-19T07:42:44.190519+00:00,False,129,0,0,0,0.0,10,False,1275,1275,2703,1275,"Revise Windows in Kubernetes section
+",3,3,35.84,,0.47
+content/en/docs/concepts/windows/intro.md,Windows containers in Kubernetes,2026-08-19T07:42:44.190519+00:00,False,2502,21,4,0,0.0,16,False,127,127,1545,1545,"fix(links): update kubernetes/community links from master to main
+",25,21,38.2,119.14,0.08
+content/en/docs/concepts/windows/user-guide.md,Guide for Running Windows Containers in Kubernetes,2026-08-19T07:42:44.190519+00:00,False,1256,12,3,6,4.78,7,False,272,272,2703,2444,"Update the doc for windows server 2025 support
+",31,24,42.06,104.67,0.1
+content/en/docs/concepts/workloads/_index.md,"""Workloads""",2026-08-19T07:42:44.190519+00:00,False,707,2,2,0,0.0,25,False,114,114,3027,1828,"Delete duplicate sentence from `content/en/docs/concept/workloads/_index.md`
+",17,11,49.41,353.5,0.04
+content/en/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale.md,Horizontal Pod Autoscaling,2026-08-19T07:42:44.190519+00:00,False,4198,25,3,11,2.62,24,False,156,156,3828,1796,"fix: replace deprecated argument `--cpu-percent` with `--cpu`
+",145,103,45.52,167.92,0.04
+content/en/docs/concepts/workloads/autoscaling/vertical-pod-autoscale.md,Vertical Pod Autoscaling,2026-08-19T07:42:44.190519+00:00,False,1494,15,4,4,2.68,8,False,79,79,271,271,"docs: add InPlace VPA update mode documentation
+",11,7,34.97,99.6,0.29
+content/en/docs/concepts/workloads/autoscaling.md,Autoscaling Workloads,2026-08-19T07:42:44.190519+00:00,False,726,10,4,0,0.0,12,False,268,268,931,926,"Move HorizontalPodAutoscaler concept page
+",20,8,42.24,72.6,0.29
+content/en/docs/concepts/workloads/controllers/_index.md,"""Workload Management""",2026-08-19T07:42:44.190519+00:00,False,436,0,0,0,0.0,8,False,947,947,3027,1389,"Rename concept section
+",7,3,53.05,,0.31
+content/en/docs/concepts/workloads/controllers/cron-jobs.md,CronJob,2026-08-19T07:42:44.190519+00:00,False,1908,14,3,2,1.05,9,False,97,97,3644,1351,"update api-reference and ref shortcode callers for new URL structure
+",108,66,62.01,136.29,0.03
+content/en/docs/concepts/workloads/controllers/daemonset.md,DaemonSet,2026-08-19T07:42:44.190519+00:00,False,1729,16,3,2,1.16,32,False,97,97,3828,2532,"update api-reference and ref shortcode callers for new URL structure
+",120,83,56.99,108.06,0.03
+content/en/docs/concepts/workloads/controllers/deployment.md,Deployments,2026-08-19T07:42:44.190519+00:00,False,5797,34,5,95,16.39,21,False,61,61,3828,2860,"add cascade deletion description
+",251,147,51.39,170.5,0.02
+content/en/docs/concepts/workloads/controllers/job.md,Jobs,2026-08-19T07:42:44.190519+00:00,False,7704,39,4,26,3.37,40,False,97,97,3828,1369,"update api-reference and ref shortcode callers for new URL structure
+",241,125,56.96,197.54,0.03
+content/en/docs/concepts/workloads/controllers/replicaset.md,ReplicaSet,2026-08-19T07:42:44.190519+00:00,False,2087,24,4,21,10.06,25,False,97,97,3807,2750,"update api-reference and ref shortcode callers for new URL structure
+",105,75,49.28,86.96,0.03
+content/en/docs/concepts/workloads/controllers/replicationcontroller.md,ReplicationController,2026-08-19T07:42:44.190519+00:00,False,2231,27,3,7,3.14,22,False,97,97,3842,3424,"update api-reference and ref shortcode callers for new URL structure
+",109,63,42.49,82.63,0.03
+content/en/docs/concepts/workloads/controllers/statefulset.md,StatefulSets,2026-08-19T07:42:44.190519+00:00,False,3201,35,5,6,1.87,27,False,76,76,3546,1902,"KEP-961: update maxUnavailable docs to reflect the FG being off by default
+",119,76,50.14,91.46,0.02
+content/en/docs/concepts/workloads/controllers/ttlafterfinished.md,Automatic Cleanup for Finished Jobs,2026-08-19T07:42:44.190519+00:00,False,491,5,3,0,0.0,6,False,673,673,2882,1389,"Fix typo of selector-selector
+",16,14,55.65,98.2,0.23
+content/en/docs/concepts/workloads/management.md,Managing Workloads,2026-08-19T07:42:44.190519+00:00,False,1499,18,4,45,30.02,18,False,196,196,3842,2271,"docs: Remove outdated TODO comment from canary deployments
+",106,50,43.49,83.28,0.05
+content/en/docs/concepts/workloads/podgroup-api/_index.md,"""PodGroup API""",2026-08-19T07:42:44.190519+00:00,False,606,9,3,7,11.55,12,False,129,129,145,145,"Move PodGroup DRA docs from Workload to PodGroup
+",4,2,52.67,67.33,0.89
+content/en/docs/concepts/workloads/podgroup-api/lifecycle.md,PodGroup Lifecycle,2026-08-19T07:42:44.190519+00:00,False,444,6,2,0,0.0,7,False,131,131,145,145,"Address feedback
+",3,1,59.79,74.0,0.9
+content/en/docs/concepts/workloads/pods/_index.md,Pods,2026-08-19T07:42:44.190519+00:00,False,3176,22,4,3,0.94,35,False,31,31,3027,1342,"Clarify what .spec.os.name constrains in the Pod OS section
+",73,46,49.58,144.36,0.01
+content/en/docs/concepts/workloads/pods/advanced-pod-config.md,Advanced Pod Configuration,2026-08-19T07:42:44.190519+00:00,False,961,19,4,1,1.04,14,False,331,331,409,409,"docs: improve page content
+",3,1,15.83,50.58,0.81
+content/en/docs/concepts/workloads/pods/disruptions.md,Disruptions,2026-08-19T07:42:44.190519+00:00,False,2132,8,2,0,0.0,25,False,459,459,3340,3340,"Fix wrong link to Node Autoscaling docs
+",67,46,43.74,266.5,0.14
+content/en/docs/concepts/workloads/pods/downward-api.md,Downward API,2026-08-19T07:42:44.190519+00:00,False,622,5,4,0,0.0,9,False,498,498,1611,1611,"Update InPlacePodVerticalScaling docs for v1.33 beta (#50290)
+",9,9,33.49,124.4,0.31
+content/en/docs/concepts/workloads/pods/ephemeral-containers.md,Ephemeral Containers,2026-08-19T07:42:44.190519+00:00,False,384,4,3,0,0.0,4,False,943,943,2536,2536,"Improve docs for Pods
+",17,9,27.84,96.0,0.37
+content/en/docs/concepts/workloads/pods/init-containers.md,Init Containers,2026-08-19T07:42:44.190519+00:00,False,1699,11,4,16,9.42,15,False,700,700,3477,2595,"38271 - Init Container concept clarity
+",90,62,52.11,154.45,0.2
+content/en/docs/concepts/workloads/pods/pod-condition.md,"""Pod Conditions""",2026-08-19T07:42:44.190519+00:00,False,1593,10,3,3,1.88,21,False,100,100,129,129,"fix anchor link
+",3,1,53.38,159.3,0.78
+content/en/docs/concepts/workloads/pods/pod-hostname.md,Pod Hostname,2026-08-19T07:42:44.190519+00:00,False,616,4,2,2,3.25,1,False,377,377,386,386,"Follow up PR 51414 comments
+",2,1,65.68,154.0,0.98
+content/en/docs/concepts/workloads/pods/pod-lifecycle.md,Pod Lifecycle,2026-08-19T07:42:44.190519+00:00,False,6941,41,5,12,1.73,52,False,89,89,3471,665,"Make probes section on Pod lifecycle page lighter
+",152,99,50.0,169.29,0.03
+content/en/docs/concepts/workloads/pods/pod-qos.md,Pod Quality of Service Classes,2026-08-19T07:42:44.190519+00:00,False,1291,13,4,1,0.77,14,False,136,136,1301,1301,"KEP-2570: Update Memory QoS documentation for v1.36
+",15,12,57.49,99.31,0.1
+content/en/docs/concepts/workloads/pods/probes.md,"Liveness, Readiness, and Startup Probes",2026-08-19T07:42:44.190519+00:00,False,2647,18,4,5,1.89,10,False,123,123,1111,135,"move probes link
+",15,8,57.46,147.06,0.11
+content/en/docs/concepts/workloads/pods/scheduling-group.md,Scheduling Group,2026-08-19T07:42:44.190519+00:00,False,251,4,2,1,3.98,7,False,131,131,145,145,"Address feedback
+",2,1,53.05,62.75,0.9
+content/en/docs/concepts/workloads/pods/sidecar-containers.md,Sidecar Containers,2026-08-19T07:42:44.190519+00:00,False,1180,9,3,0,0.0,12,False,212,212,1047,1047,"docs: move sidecar Job clarification to first example
+",21,14,41.71,131.11,0.2
+content/en/docs/concepts/workloads/pods/static-pods.md,"""Static Pods""",2026-08-19T07:42:44.190519+00:00,False,383,4,2,0,0.0,6,False,124,124,124,124,"Add Static Pods concept page
+",1,1,62.76,95.75,1.0
+content/en/docs/concepts/workloads/pods/user-namespaces.md,User Namespaces,2026-08-19T07:42:44.190519+00:00,False,1925,10,3,3,1.56,3,False,186,186,1471,1019,"content: Remove old note about userns
+",31,8,59.1,192.5,0.13
+content/en/docs/concepts/workloads/resource-managers.md,Resource managers,2026-08-19T07:42:44.190519+00:00,False,3658,25,6,6,1.64,12,False,133,133,2129,611,"KEP-5526: Pod Level Resource Managers documentation
+",14,10,40.57,146.32,0.06
+content/en/docs/concepts/workloads/workload-api/_index.md,"""Workload API""",2026-08-19T07:42:44.190519+00:00,False,478,6,3,1,2.09,16,False,118,118,273,159,"Rename EnableWorkloadWithJob feature gate references to WorkloadWithJob
+",13,8,60.14,79.67,0.43
+content/en/docs/concepts/workloads/workload-api/disruption-and-priority.md,Pod Group Disruption and Priority,2026-08-19T07:42:44.190519+00:00,False,336,5,3,1,2.98,6,False,65,65,173,173,"Fix typos in manual documentation pages
+",2,2,45.13,67.2,0.38
+content/en/docs/concepts/workloads/workload-api/policies.md,PodGroup Scheduling Policies,2026-08-19T07:42:44.190519+00:00,False,310,5,3,2,6.45,8,False,131,131,273,273,"Address feedback
+",4,2,42.92,62.0,0.48
+content/en/docs/concepts/workloads/workload-api/topology-aware-scheduling.md,Topology-Aware Workload Scheduling,2026-08-19T07:42:44.190519+00:00,False,539,5,3,1,1.86,4,False,141,141,145,145,"Apply review comments
+",2,2,39.42,107.8,0.97

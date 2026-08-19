@@ -102,7 +102,7 @@ def file_history(repo_path: Path, rel_path: str) -> list[tuple[datetime, str, st
     out = result.stdout
     commits = []
     for chunk in out.split("COMMIT|")[1:]:
-        lines = chunk.splitlines()
+        lines = chunk.split("\n")
         numstat = lines[2].split("\t")
         date, author, subject = lines[0].split("|", 2)
         date = datetime.fromisoformat(date)
@@ -191,7 +191,7 @@ def parse_blame_times(porcelain: str) -> list[int]:
         landed; they diverge on every rebase and cherry-pick
       * the trailing space stops a hypothetical `author-timezone` matching
     """
-    return [int(line.split()[1]) for line in porcelain.splitlines()
+    return [int(line.split()[1]) for line in porcelain.split("\n")
             if line.startswith("author-time ")]
 
 
