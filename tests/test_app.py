@@ -26,10 +26,11 @@ import pytest
 pytest.importorskip("streamlit")
 from streamlit.testing.v1 import AppTest
 
-APP = "src/dochealth/app.py"
-# Resolved at import, before any test chdirs: AppTest needs an absolute path once
-# a test moves the working directory to give the app a doctored corpus.
-APP_ABS = str(Path(APP).resolve())
+# Anchored on __file__: AppTest resolves a relative path against the calling
+# file, which is tests/, not the repo root. Absolute also survives a test that
+# moves the working directory to give the app a doctored corpus.
+ROOT = Path(__file__).resolve().parent.parent
+APP = str(ROOT / "src/dochealth/app.py")
 
 # Verified by hand against both corpora, and unchanged when the filename rule
 # moved from the dashboard into the extractor.
@@ -183,7 +184,7 @@ def test_a_reading_outside_the_axis_is_named_not_dropped(tmp_path, monkeypatch):
     waited for: a real CSV with one reading pushed off the scale.
     """
     off_scale_page = "content/en/docs/concepts/architecture/nodes.md"
-    frame = pd.read_csv("metrics-kubernetes.csv")
+    frame = pd.read_csv(ROOT / "metrics-kubernetes.csv")
     target = frame["path"] == off_scale_page
     assert target.sum() == 1, "fixture page is missing from the corpus"
     assert frame.loc[target, "word_count"].iat[0] >= 150, "fixture page must be scored"
@@ -194,7 +195,7 @@ def test_a_reading_outside_the_axis_is_named_not_dropped(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     frame.to_csv(tmp_path / "metrics-kubernetes.csv", index=False)
 
-    at = AppTest.from_file(APP_ABS, default_timeout=120).run()
+    at = AppTest.from_file(APP, default_timeout=120).run()
     assert not at.exception
 
     captions = [c.value for c in at.caption]
