@@ -6,6 +6,11 @@
 # 3.14, so pip tries to compile it from source and fails. Listing only what the
 # project actually imports lets pip pick versions that work on the interpreter
 # you have.
+-e .         # the dochealth package itself. Streamlit Community Cloud installs
+             # from this file and nothing else, and app.py imports
+             # `dochealth.extract` — without this line the deploy dies with
+             # ModuleNotFoundError. Locally it is the same editable install the
+             # README asks for.
 pandas
 textstat
 pytest
