@@ -11,6 +11,20 @@ Two corpora are used throughout, and nothing is ever tuned against one alone:
   free-form commit messages, raw HTML permitted in `.md`.
 * **docusaurus**, scoped to `website/docs` — 94 pages, MDX, conventional commits.
 
+## Five things this project taught me
+
+1. **A metric with a denominator fails silently.** Two candidate metrics looked
+   excellent on correlation tables and were artefacts of page length. Read both
+   tails before trusting any ratio.
+2. **Parsers that don't error produce plausible wrong numbers.** Every parser bug
+   here was found by reading a page whose score looked odd, never by an error.
+3. **Never tune against one corpus.** Several defects were invisible in one doc
+   set and dominated the other.
+4. **A weight makes no factual claim.** Metrics can be checked against pages;
+   weights can't, which is why there is no composite score.
+5. **Required beats optional when the failure is silent.** An optional config
+   produced wrong-but-plausible numbers, so `--config`/`--no-config` is required.
+
 ---
 
 ## Measuring against a reference implementation

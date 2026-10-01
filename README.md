@@ -14,6 +14,24 @@ decisive at the same time, and a mean of percentile ranks says the same thing
 about every corpus. The reasoning, with the numbers behind it, is in
 [DECISIONS.md](DECISIONS.md).
 
+## At a glance
+
+![dochealth dashboard](dashboard.png)
+
+Run against kubernetes/website (176 concept pages) and Docusaurus (94 pages), it found:
+
+- **Pages that look maintained and aren't.** `replicationcontroller.md` was edited
+  95 days ago; its median line is 3,422 days old.
+- **One housekeeping commit hid years of staleness.** A single `chore:` commit made
+  7 of 8 Docusaurus guide pages look 158 days old when their last real content
+  edit was up to 1,033 days ago.
+- **Readability scores measure markup unless you stop them.** A Kubernetes page
+  scored −29 because leftover HTML formed one 5,761-character "sentence". With
+  the HTML stripped, it scores 34.6.
+- **A single health score can't compare doc sets.** Two unrelated corpora both
+  averaged ~0.42, because percentile ranks pin the mean by construction. So there
+  is no composite score.
+
 ## Install
 
     python -m venv .venv && source .venv/bin/activate
@@ -106,8 +124,8 @@ percentiles are always computed over the whole corpus.
     python -m pytest        # ~7s, the parsers, the rules and the dashboard
     python check.py         # ~3min, end-to-end against a real clone
 
-`test_extract.py` holds one case per parsing edge case found while building
-this. `test_scoring.py` pins the detection and ranking rules — the thin-page
+The suite lives in [tests/](tests/); run it from the repo root. `test_extract.py`
+holds one case per parsing edge case found while building this. `test_scoring.py` pins the detection and ranking rules — the thin-page
 cut, the staleness modifier, what makes a page consistently poor — each of which
 is a judgment with evidence behind it in DECISIONS.md. `test_cli.py` does the
 same for the command line, where several cases pin a *decision* rather than a
@@ -140,3 +158,7 @@ The two test corpora are not committed. Clone them into the repo root:
 
 Then extract with the matching config — `website` with
 `content/en/docs/concepts`, `docusaurus` with `website/docs`.
+
+## License
+
+MIT — see [LICENSE](LICENSE).

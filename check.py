@@ -171,7 +171,7 @@ print("  ✓ looks right")
 # ── Step 5: median line age ───────────────────────────────────────────────────
 # How old the CONTENT is, as against when the file was last touched. Only
 # reachable through the real clone, same as file_history — a fixture repo would
-# be testing the fixture. The pure parser is covered in test_extract.py.
+# be testing the fixture. The pure parser is covered in tests/test_extract.py.
 step(5, "median line age (git blame)")
 blame_rel = "content/en/docs/concepts/workloads/pods/pod-lifecycle.md"
 if not hasattr(extract, "parse_blame_times"):

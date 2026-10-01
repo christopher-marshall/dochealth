@@ -3,6 +3,8 @@ name = "dochealth"
 version = "0.3.0"
 description = "Per-page documentation health metrics for docs-as-code repos"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 # Only what the installed tool imports. pytest/seaborn/ipykernel stay in
 # requirements.txt — they are how the project is developed, not what it needs
@@ -24,6 +26,11 @@ dashboard = ["streamlit", "altair"]
 # .venv/bin/, whose body is: import main from dochealth.cli, call it, exit.
 [project.scripts]
 dochealth = "dochealth.cli:main"
+
+# The corpora clones (website/, docusaurus/) sit in the repo root; without this
+# a bare `pytest` walks them looking for tests.
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["hatchling"]
